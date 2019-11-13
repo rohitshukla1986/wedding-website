@@ -1,0 +1,79 @@
+.count-down-timer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.interval-container {
+  clip-path: circle(50% at 50% 50%);
+  height:150px;
+  width:150px;
+  background-color: rgba(52, 65, 72, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2px;
+}
+
+.animate {
+  animation: dbz 2s;
+}
+
+.animate-delay-1s {
+  animation-delay: 1s;
+}
+
+@keyframes dbz {
+  0% {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.interval-value {
+  color: #ffff;
+  font-family: "Leelawadee UI";
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.interval-unit {
+  color: #ffff;
+  font-family: "Leelawadee UI";
+  text-transform: uppercase;
+}
+
+.seconds-counter {
+  background-color:  rgba(236, 154, 152, 0.8);
+}
+
+.count-down-text {
+  font-size: 2.9vw;
+  font-weight: 400;
+  letter-spacing: 1vw;
+  font-family: 'Dr Sugiyama', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*@keyframes spin {*/
+/*from { transform: rotate(0deg); }*/
+/*to { transform: rotate(360deg); }*/
+/*}*/
+
+/*@keyframes moveLeftToRight {*/
+/*0%   { left: -100px; position: absolute; }*/
+/*99%   { left: 87%; position: absolute; }*/
+/*100% { left: 88%}*/
+/*}*/
