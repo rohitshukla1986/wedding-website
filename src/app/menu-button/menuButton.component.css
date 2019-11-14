@@ -1,0 +1,107 @@
+.btn {
+  background-image: url("../../assets/img/menuIcon.png");
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle(50% at 50% 50%);
+  height:100px;
+  width:100px;
+  background-color: rgba(52, 65, 72, 0.8);
+}
+
+.navigation {
+}
+
+.navigation-checkbox {
+  display: none;
+}
+
+.navigation-button {
+  background-color: #ffffff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem #344148;
+}
+
+.navigation-background {
+  height: 6rem;
+  width: 6rem;
+  border-radius:50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(rgb(236, 154, 152),  rgb(52, 65, 72));
+  z-index: 1000;
+  transition: transform 0.8s;
+
+  /*transform: scale(80);*/
+}
+
+.navigation-nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s;
+}
+
+.navigation-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+
+.navigation-item {
+  margin: 1rem;
+}
+
+.navigation-link:link,
+.navigation-link:visited {
+  display: inline-block;
+  font-family: "Leelawadee UI";
+  font-size: 2rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(52, 65, 72) 50%);
+  padding: 1rem 2rem;
+  background-size: 240%;
+  transition: all 0.4s;
+}
+
+.navigation-link:hover,
+.navigation-link:active {
+  background-position: 100%;
+  color: rgb(236, 154, 152);
+  transform: translateX(1rem);
+}
+
+.navigation-checkbox:checked ~ .navigation-background {
+  transform: scale(80);
+}
+
+.navigation-checkbox:checked ~ .navigation-nav {
+  opacity: 1;
+  width: 100%;
+
+}
+

@@ -16,6 +16,26 @@
   padding-right: 2px;
 }
 
+.proposal-img {
+  background-image: url("../../assets/img/proposal.png");
+  background-size: contain;
+}
+
+.cake-img {
+  background-image: url("../../assets/img/cake.png");
+  background-size: contain;
+}
+
+.honeymoon-img {
+  background-image: url("../../assets/img/trip.png");
+  background-size: contain;
+}
+
+.couple-img {
+  background-image: url("../../assets/img/couple.png");
+  background-size: contain;
+}
+
 .animate {
   animation: dbz 2s;
 }
@@ -45,8 +65,8 @@
 
 .interval-unit {
   color: #ffff;
-  font-family: "Leelawadee UI";
-  text-transform: uppercase;
+  font-size:2rem;
+  font-family: 'Great Vibes', cursive;
 }
 
 .seconds-counter {
@@ -57,7 +77,7 @@
   font-size: 2.9vw;
   font-weight: 400;
   letter-spacing: 1vw;
-  font-family: 'Dr Sugiyama', cursive;
+  font-family: 'Great Vibes', cursive;
   display: flex;
   align-items: center;
   justify-content: center;

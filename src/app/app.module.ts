@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CountDownTimerComponent } from './countDownTimer/countDownTimer.component';
 import { RsvpButtonComponent } from './rsvp-button/rsvpButton.component';
+import { MenuButtonComponent } from './menu-button/menuButton.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CountDownTimerComponent,
-    RsvpButtonComponent
+    RsvpButtonComponent,
+    MenuButtonComponent
   ],
   imports: [
     BrowserModule

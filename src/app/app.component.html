@@ -2,18 +2,31 @@
 <body>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
+
+<!--<div *ngIf="toggleMenuButton">-->
+  <!--<div class="menu"></div>-->
+<!--</div>-->
+<div class="menu-button-container">
+  <app-menu-button
+    (emitMenuToggled)="toggleMenu($event)"
+  ></app-menu-button>
+</div>
   <header class="header">
     <div class="heading-container">
       <h1 class="heading-primary">
         <span class="heading-primary-main">Rohit and Raji</span>
         <span class="heading-primary-sub">September 26th 2020 &#9829; Birmingham</span>
       </h1>
+      <div class="rsvp-button-container">
+        <app-rsvp-button></app-rsvp-button>
+      </div>
     </div>
-    <app-rsvp-button-timer></app-rsvp-button-timer>
+
   </header>
   <main>
-      <app-count-down-timer></app-count-down-timer>
+    <app-count-down-timer></app-count-down-timer>
   </main>
 </body>
 </html>

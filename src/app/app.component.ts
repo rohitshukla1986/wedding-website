@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Wedding Website';
+  public toggleMenuButton: boolean;
+
+  toggleMenu(toggleMenuButton: boolean) {
+    this.toggleMenuButton = toggleMenuButton;
+  }
 }
