@@ -20,10 +20,6 @@
   animation: dbz 2s;
 }
 
-.animate-delay-1s {
-  animation-delay: 1s;
-}
-
 @keyframes dbz {
   0% {
     opacity: 0;
