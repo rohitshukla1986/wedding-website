@@ -13,10 +13,9 @@
 }
 
 .btn-style {
-  background-color: rgba(52, 65, 72, 0.8);
   font-family: 'Great Vibes', cursive;  color: #ffffff;
   font-size: 2rem;
-  background-image: url("../../assets/img/ring.png");
+  background: rgba(52, 65, 72, 0.8) url("../../assets/img/ring.png");
   background-size: contain;
 }
 
