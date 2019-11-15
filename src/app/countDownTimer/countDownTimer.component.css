@@ -4,6 +4,12 @@
   max-width: 100%;
 }
 
+.count-down-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .interval-container {
   clip-path: circle(50% at 50% 50%);
   height:150px;
@@ -13,7 +19,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .proposal-img {
