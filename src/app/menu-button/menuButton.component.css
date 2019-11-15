@@ -10,8 +10,8 @@
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 4rem;
+  right: 4rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem #344148;
@@ -24,8 +24,8 @@
   width: 6rem;
   border-radius:50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 4.5rem;
+  right: 4.5rem;
   background-image: radial-gradient(rgb(236, 154, 152),  rgb(52, 65, 72));
   z-index: 1000;
   transition: 0.8s transform cubic-bezier(0.86, 0, 0.07, 1);
@@ -60,12 +60,11 @@
 .navigation-link:link,
 .navigation-link:visited {
   display: inline-block;
-  font-family: "Leelawadee UI";
+  font-family: 'Great Vibes', cursive;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(52, 65, 72) 50%);
   padding: 0.5rem 2rem;
   background-size: 240%;
@@ -125,6 +124,20 @@
 
 .navigation-button:hover .navigation-icon::after {
   top: 1rem;
+}
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon {
+  background-color: transparent;
+}
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon::before {
+  transform: rotate(135deg);
+  top: 0;
+}
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon::after {
+  transform: rotate(-135deg);
+  top: 0;
 }
 
 .story-icon {
