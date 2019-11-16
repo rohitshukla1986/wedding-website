@@ -18,40 +18,51 @@ body {
 
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  height: 70vh;
-  background-size: cover;
-  background: linear-gradient(
-    to left top,
-    rgba(181, 180, 172, 0.8),
-    rgba(236, 154, 152, 0.8)),
-  url("../assets/img/collage.jpg") top;
+  height: 100vh;
+  /*background-size: cover;*/
+  /*background: linear-gradient(*/
+    /*to left top,*/
+    /*rgba(181, 180, 172, 0.8),*/
+    /*rgba(236, 154, 152, 0.8)),*/
+  /*url("../assets/img/collage.jpg") top;*/
 
-  clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
-  border-top: #344148 5px solid;
-  border-left: #344148 5px solid;
-  border-right: #344148 5px solid;
+  /*clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);*/
+  /*border-top: #344148 5px solid;*/
+  /*border-left: #344148 5px solid;*/
+  /*border-right: #344148 5px solid;*/
+}
+
+.header-picture {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/collage.jpg");
+  background-size: contain;
 }
 
 .heading-primary {
-  font-family: 'Great Vibes', cursive;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
-  color: #F8EEF1;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #344148;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 5vw;
+  font-size: 10vw;
   font-weight: 400;
   letter-spacing: 1vw;
   animation: moveInLeft 1s ease-out;
+  font-family: 'Great Vibes', cursive;
+
 }
 
 .heading-primary-sub {
+  font-family: 'Great Vibes', cursive;
   display: block;
-  font-size: 2vw;
-  font-weight: 400;
+  font-size: 1.5vw;
+  font-weight: 300;
   letter-spacing: 0.5vw;
   animation: moveInRight 1s ease-out;
 }
@@ -61,14 +72,21 @@ body {
   flex: auto;
   align-items: center;
   flex-direction: column;
+  height: 35vh;
+  width:100%;
+}
+
+.count-down-container {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rsvp-button-container {
   height: 100%;
   display: flex;
-  align-items: center;
-  padding-bottom: 130px;
+  justify-content: center;
 }
 
 .menu-button-container {
