@@ -1,29 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {OurStoryComponent} from './our-story/our-story.component';
 
-import { AppComponent } from './app.component';
-import { CountDownTimerComponent } from './countDownTimer/countDownTimer.component';
-import { RsvpButtonComponent } from './rsvp-button/rsvpButton.component';
-import { MenuButtonComponent } from './menu-button/menuButton.component';
-import { OurStoryComponent } from './our-story/our-story.component';
-import {ModalComponent} from './modal/modal.component';
-import {ModalService} from './modal/modal.service';
+const routes = [{
+  path: 'ourStory',
+  component: OurStoryComponent,
+},
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CountDownTimerComponent,
-    RsvpButtonComponent,
-    MenuButtonComponent,
-    OurStoryComponent,
-    ModalComponent
-  ],
   imports: [
-    BrowserModule,
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+    })
   ],
-  providers: [
-    ModalService
-  ],
-  bootstrap: [AppComponent]
+  exports: [RouterModule]
 })
-export class AppModule { }
+export class AppRoutingModule {}

@@ -6,7 +6,9 @@ import { CountDownTimerComponent } from './countDownTimer/countDownTimer.compone
 import { RsvpButtonComponent } from './rsvp-button/rsvpButton.component';
 import { MenuButtonComponent } from './menu-button/menuButton.component';
 import { OurStoryComponent } from './our-story/our-story.component';
-import { FacebookLoginComponent } from './facebook-login/facebook-login.component';
+import {ModalComponent} from './modal/modal.component';
+import {ModalService} from './modal/modal.service';
+import {HomePageComponent} from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,15 @@ import { FacebookLoginComponent } from './facebook-login/facebook-login.componen
     RsvpButtonComponent,
     MenuButtonComponent,
     OurStoryComponent,
-    FacebookLoginComponent
+    ModalComponent,
+    HomePageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
-  providers: [],
+  providers: [
+    ModalService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

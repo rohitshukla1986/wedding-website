@@ -7,7 +7,14 @@ import {Component} from '@angular/core';
 })
 export class HomePageComponent {
 
+  public firstName: string;
+  public lastName: string;
+
   constructor() {
   }
 
+  onButtonPress(userDetails: any) {
+    this.firstName = userDetails['first_name'];
+    this.lastName = userDetails['last_name'];
+  }
 }

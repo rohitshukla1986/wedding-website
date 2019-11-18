@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Wedding Website';
-  public toggleMenuButton: boolean;
-
-  toggleMenu(toggleMenuButton: boolean) {
-    this.toggleMenuButton = toggleMenuButton;
-  }
 }

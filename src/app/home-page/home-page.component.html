@@ -1,5 +1,19 @@
-<div class="main">
-  <h1 class="heading-primary">
-    <span class="heading-primary-main">Our Story</span>
-  </h1>
-</div>
+{{firstName}}
+{{lastName}}
+<span class="heading-primary-sub">September 26th 2020 &#9829; Birmingham</span>
+<header class="header">
+  <app-menu-button></app-menu-button>
+  <div class="heading-container">
+    <h1 class="heading-primary">
+      <span class="heading-primary-main">Rohit & Raji</span>
+    </h1>
+  </div>
+  <div class="header-picture">
+    <div class="count-down-container">
+      <app-count-down-timer></app-count-down-timer>
+    </div>
+    <div class="rsvp-button-container">
+      <app-rsvp-button (userDetails)="onButtonPress($event)"></app-rsvp-button>
+    </div>
+  </div>
+</header>

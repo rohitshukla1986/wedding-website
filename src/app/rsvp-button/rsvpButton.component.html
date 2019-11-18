@@ -1,5 +1,16 @@
 <div>
-<a href="#" class="btn btn-style">
-  <p class="text">Save the Date<p>
-</a>
+  <a href="#" class="btn btn-style">
+    <p (click)="submitLogin()" class="text">Save the Date<p>
+  </a>
 </div>
+
+<app-modal id="custom-modal-1">
+  <div class="modal">
+    <div class="modal-body">
+      <h1>A Custom Modal!</h1>
+      <button (click)="closeModal('custom-modal-1')">Close</button>
+    </div>
+  </div>
+  <div class="modal-background"></div>
+</app-modal>
+

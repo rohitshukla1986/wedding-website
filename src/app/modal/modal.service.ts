@@ -1,57 +1,25 @@
-import { Injectable } from '@angular/core';
-declare var FB: any;
+export class ModalService {
+  private modals: any[] = [];
 
-@Injectable({
-  providedIn: 'root'
-})
-export class FacebookService {
-
-  constructor() {
+  add(modal: any) {
+    // add modal to array of active modals
+    this.modals.push(modal);
   }
 
-  initialiseFb() {
-    (window as any).fbAsyncInit = function() {
-      FB.init({
-        appId      : '531411050741896',
-        cookie     : true,
-        xfbml      : true,
-        version    : 'v3.1'
-      });
-      FB.AppEvents.logPageView();
-    };
-
-    (function(d, s, id) {
-      let js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return; }
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+  remove(id: string) {
+    // remove modal from array of active modals
+    this.modals = this.modals.filter(x => x.id !== id);
   }
 
-  submitLogin(): any {
-    let a: any;
+  open(id: string) {
+    // open modal specified by id
+    const modal: any = this.modals.filter(x => x.id === id)[0];
+    modal.open();
+  }
 
-    this.initialiseFb();
-
-    window['FB'].login((response) => {
-      console.log('login response', response);
-      if (response.authResponse) {
-
-        window['FB'].api('/me', {
-          fields: 'last_name, first_name, email'
-        }, (userInfo) => {
-
-          console.log('user information');
-          console.log(userInfo);
-          a = userInfo;
-        });
-
-      } else {
-        console.log('User login failed');
-      }
-    }, {scope: 'email'});
-
-    return a;
+  close(id: string) {
+    // close modal specified by id
+    const modal: any = this.modals.filter(x => x.id === id)[0];
+    modal.close();
   }
 }
