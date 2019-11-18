@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { CountDownTimerComponent } from './countDownTimer/countDownTimer.component';
 import { RsvpButtonComponent } from './rsvp-button/rsvpButton.component';
 import { MenuButtonComponent } from './menu-button/menuButton.component';
-import {OurStoryComponent} from './our-story/our-story.component';
+import { OurStoryComponent } from './our-story/our-story.component';
+import { FacebookLoginComponent } from './facebook-login/facebook-login.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {OurStoryComponent} from './our-story/our-story.component';
     CountDownTimerComponent,
     RsvpButtonComponent,
     MenuButtonComponent,
-    OurStoryComponent
+    OurStoryComponent,
+    FacebookLoginComponent
   ],
   imports: [
     BrowserModule

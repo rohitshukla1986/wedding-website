@@ -13,10 +13,11 @@
 }
 
 .btn-style {
-  font-family: 'Great Vibes', cursive;  color: #ffffff;
+  font-family: 'Great Vibes', cursive;  color: black;
   font-size: 2rem;
-  background: rgba(52, 65, 72, 1) url("../../assets/img/ring.png");
+  background: white;
   background-size: contain;
+  border: 2px solid goldenrod;
 }
 
 .btn:hover {
