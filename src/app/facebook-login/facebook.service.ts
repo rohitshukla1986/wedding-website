@@ -1,17 +1,15 @@
-import {Component, OnInit} from '@angular/core';
+import { Injectable } from '@angular/core';
 declare var FB: any;
 
-@Component({
-  selector: 'app-facebook-login',
-  templateUrl: './facebook-login.component.html',
-  styleUrls: ['./facebook-login.component.css']
+@Injectable({
+  providedIn: 'root'
 })
-export class FacebookLoginComponent implements OnInit {
+export class FacebookService {
 
   constructor() {
   }
 
-  ngOnInit(): void {
+  initialiseFb() {
     (window as any).fbAsyncInit = function() {
       FB.init({
         appId      : '531411050741896',
@@ -31,18 +29,29 @@ export class FacebookLoginComponent implements OnInit {
     }(document, 'script', 'facebook-jssdk'));
   }
 
-  submitLogin() {
-    console.log('submit login to facebook');
-    // FB.login();
-    FB.login((response) => {
-      console.log('submitLogin', response);
+  submitLogin(): any {
+    let a: any;
+
+    this.initialiseFb();
+
+    window['FB'].login((response) => {
+      console.log('login response', response);
       if (response.authResponse) {
-        //login success
-        //login success code here
-        //redirect to home page
+
+        window['FB'].api('/me', {
+          fields: 'last_name, first_name, email'
+        }, (userInfo) => {
+
+          console.log('user information');
+          console.log(userInfo);
+          a = userInfo;
+        });
+
       } else {
         console.log('User login failed');
       }
-    });
+    }, {scope: 'email'});
+
+    return a;
   }
 }
