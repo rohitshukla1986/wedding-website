@@ -5,7 +5,7 @@ declare var FB: any;
 @Component({
   selector: 'app-rsvp-button',
   templateUrl: './rsvpButton.component.html',
-  styleUrls: ['./rsvpButton.component.css']
+  styleUrls: ['./rsvpButton.component.scss']
 })
 export class RsvpButtonComponent implements OnInit {
 

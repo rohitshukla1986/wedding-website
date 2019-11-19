@@ -1,7 +1,9 @@
+@import '../common-styles';
+
 .heading-primary {
   text-align: center;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  color: #344148;
+  color: $dark-grey;
 }
 
 .heading-primary-main {
@@ -10,11 +12,11 @@
   font-weight: 400;
   letter-spacing: 1vw;
   animation: moveInLeft 1s ease-out;
-  font-family: 'Great Vibes', cursive;
+  font-family: $primary-font;
 }
 
 .main {
   height: 100vh;
   border: 2px solid black;
-  background-color:  rgba(236, 154, 152, 1);
+  background-color: $pink;
 }

@@ -4,7 +4,7 @@ import {interval, timer} from 'rxjs';
 @Component({
   selector: 'app-count-down-timer',
   templateUrl: './countDownTimer.component.html',
-  styleUrls: ['./countDownTimer.component.css']
+  styleUrls: ['./countDownTimer.component.scss']
 })
 export class CountDownTimerComponent implements OnInit {
 
