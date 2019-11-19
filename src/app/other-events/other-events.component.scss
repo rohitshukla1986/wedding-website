@@ -19,22 +19,7 @@
   width: 100%;
   height: 100vh;
   background-color: $pink;
-  clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%);
-}
-
-.story-area {
-  height: 100%;
-  background-color: $white;
-  width: 75vw;
-  border: 4px black dashed;
-  overflow: scroll;
-  font: $secondary-font;
-}
-
-.story-area-container {
-  position: absolute;
-  height: 65vh;
-  margin-top: 35vh;
+  clip-path: polygon(0 0, 100% 26%, 100% 100%, 0% 100%);
 }
 
 .main-container {

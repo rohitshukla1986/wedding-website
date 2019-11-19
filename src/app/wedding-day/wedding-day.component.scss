@@ -1,0 +1,21 @@
+@import '../common-styles';
+
+.heading-primary {
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: $dark-grey;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 10vw;
+  font-weight: 400;
+  letter-spacing: 1vw;
+  animation: moveInLeft 1s ease-out;
+  font-family: $primary-font;
+}
+
+.main {
+  margin-top: 70px;
+  height: 100vh;
+}

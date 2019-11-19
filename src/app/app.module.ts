@@ -9,6 +9,8 @@ import { OurStoryComponent } from './our-story/our-story.component';
 import {ModalComponent} from './modal/modal.component';
 import {ModalService} from './modal/modal.service';
 import {HomePageComponent} from './home-page/home-page.component';
+import {WeddingDayComponent} from './wedding-day/wedding-day.component';
+import {OtherEventsComponent} from './other-events/other-events.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {HomePageComponent} from './home-page/home-page.component';
     MenuButtonComponent,
     OurStoryComponent,
     ModalComponent,
-    HomePageComponent
+    HomePageComponent,
+    WeddingDayComponent,
+    OtherEventsComponent
   ],
   imports: [
     BrowserModule,
