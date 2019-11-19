@@ -30,10 +30,23 @@
 
 }
 
+.welcome-names-sub {
+  font-family: 'Great Vibes', cursive;
+  display: block;
+  font-size: 1.5vw;
+  font-weight: 300;
+  letter-spacing: 0.5vw;
+}
+
+.welcome-names-sub span {
+  color:  rgba(236, 154, 152, 1);
+  font-weight: bold;
+}
+
 .heading-primary-sub {
   font-family: 'Great Vibes', cursive;
   display: block;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 300;
   letter-spacing: 0.5vw;
   animation: moveInRight 1s ease-out;
@@ -64,6 +77,27 @@
 .menu-button-container {
   padding-top: 5px;
   padding-right: 5px;
+}
+
+.top-headings-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.welcome-names-container,
+.heading-primary-container {
+  width: 50%;
+}
+
+.welcome-names-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headings-primary-container {
+  display: flex;
+  justify-content: flex-start;
 }
 
 @keyframes moveInLeft {

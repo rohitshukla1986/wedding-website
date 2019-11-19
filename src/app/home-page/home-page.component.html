@@ -1,7 +1,13 @@
-{{firstName}}
-{{lastName}}
-<span class="heading-primary-sub">September 26th 2020 &#9829; Birmingham</span>
-<header class="header">
+<div class="top-headings-container">
+  <div class="heading-primary-container">
+    <span class="heading-primary-sub">September 26th 2020 &#9829; Birmingham</span>
+  </div>
+
+  <div class="welcome-names-container" *ngIf="(firstName && lastName) != undefined">
+    <div class="welcome-names-sub">Welcome, <span>{{firstName}} {{lastName}}</span></div>
+  </div>
+</div>
+  <header class="header">
   <app-menu-button></app-menu-button>
   <div class="heading-container">
     <h1 class="heading-primary">
@@ -13,7 +19,11 @@
       <app-count-down-timer></app-count-down-timer>
     </div>
     <div class="rsvp-button-container">
-      <app-rsvp-button (userDetails)="onButtonPress($event)"></app-rsvp-button>
+      <app-rsvp-button
+        (userDetails)="onButtonPress($event)"
+        [firstName]="firstName"
+        [lastName]="lastName"
+      ></app-rsvp-button>
     </div>
   </div>
 </header>

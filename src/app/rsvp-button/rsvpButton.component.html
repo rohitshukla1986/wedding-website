@@ -7,7 +7,15 @@
 <app-modal id="custom-modal-1">
   <div class="modal">
     <div class="modal-body">
-      <h1>A Custom Modal!</h1>
+      <h1>Hey {{firstName}}, please fill in the details below to let us know if you will be joining us on the 26th of September 2020</h1>
+      <p> Are you attending? </p> <input type="radio" name="attending" value="Yes">
+     <input type="radio" name="attending" value="No">
+      <p> Will you bringing a partner?</p> <input type="radio" name="partner" value="Yes">
+      <input type="radio" name="partner" value="No">
+      <p> Will you bringing children?</p> <input type="radio" name="children" value="Yes">
+      <input type="radio" name="children" value="No">
+      <p> How many?</p> <input type="number" name="number" value="Yes">
+      <input type="radio" name="number" value="No">
       <button (click)="closeModal('custom-modal-1')">Close</button>
     </div>
   </div>

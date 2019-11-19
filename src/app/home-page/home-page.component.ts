@@ -17,4 +17,5 @@ export class HomePageComponent {
     this.firstName = userDetails['first_name'];
     this.lastName = userDetails['last_name'];
   }
+
 }

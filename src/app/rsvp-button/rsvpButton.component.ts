@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {ModalService} from '../modal/modal.service';
 declare var FB: any;
 
@@ -8,6 +8,12 @@ declare var FB: any;
   styleUrls: ['./rsvpButton.component.css']
 })
 export class RsvpButtonComponent implements OnInit {
+
+  @Input()
+  public firstName: string;
+
+  @Input()
+  public lastName: string;
 
   @Output()
   public userDetails = new EventEmitter();
