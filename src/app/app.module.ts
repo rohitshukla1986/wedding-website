@@ -11,6 +11,10 @@ import {ModalService} from './modal/modal.service';
 import {HomePageComponent} from './home-page/home-page.component';
 import {WeddingDayComponent} from './wedding-day/wedding-day.component';
 import {OtherEventsComponent} from './other-events/other-events.component';
+import {TravelComponent} from './travel/travel.component';
+import {FaqComponent} from './faq/faq.component';
+import {PhotoGalleryComponent} from './photo-gallery/photo-gallery.component';
+import {FaqCardComponent} from './faq/faq-card/faq-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import {OtherEventsComponent} from './other-events/other-events.component';
     ModalComponent,
     HomePageComponent,
     WeddingDayComponent,
-    OtherEventsComponent
+    OtherEventsComponent,
+    TravelComponent,
+    PhotoGalleryComponent,
+    FaqComponent,
+    FaqCardComponent
   ],
   imports: [
     BrowserModule,

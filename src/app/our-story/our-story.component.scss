@@ -27,7 +27,8 @@
   background-color: $white;
   width: 75vw;
   border: 4px black dashed;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: auto;
   font: $secondary-font;
 }
 
@@ -41,4 +42,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: $dark-grey;
+  opacity: 0.5;
+  border: $gold-outline 2px solid;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $gold-outline;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgoldenrod;
 }

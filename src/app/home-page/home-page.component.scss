@@ -20,7 +20,7 @@
 
 .heading-primary {
   text-shadow: -1px 0 $gold-outline, 0 1px $gold-outline, 1px 0 $gold-outline, 0 -1px $gold-outline;
-  color: $dark-grey;
+  color: black;
 }
 
 .heading-primary-main {
@@ -39,6 +39,7 @@
   font-size: 1.5vw;
   font-weight: 300;
   letter-spacing: 0.5vw;
+  color: black;
 }
 
 .welcome-names-sub span {
@@ -53,6 +54,7 @@
   font-weight: 300;
   letter-spacing: 0.5vw;
   animation: moveInRight 1s ease-out;
+  color: black;
 }
 
 .heading-container {
