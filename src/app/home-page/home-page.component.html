@@ -3,20 +3,20 @@
     <span class="heading-primary-sub">September 26th 2020 &#9829; Birmingham</span>
   </div>
 
-  <div class="welcome-names-container">
-    <div class="welcome-names-sub" *ngIf="(firstName && lastName) != undefined" >
-      Welcome,
-      <span>
-        {{firstName}} {{lastName}}
-      </span>
-    </div>
-    <div class="welcome-names-sub" *ngIf="(firstName && lastName) == undefined">
-      Welcome,
-      <span>
-        Guest
-      </span>
-    </div>
-  </div>
+  <!--<div class="welcome-names-container">-->
+    <!--<div class="welcome-names-sub" *ngIf="(firstName && lastName) != undefined" >-->
+      <!--Welcome,-->
+      <!--<span>-->
+        <!--{{firstName}} {{lastName}}-->
+      <!--</span>-->
+    <!--</div>-->
+    <!--<div class="welcome-names-sub" *ngIf="(firstName && lastName) == undefined">-->
+      <!--Welcome,-->
+      <!--<span>-->
+        <!--Guest-->
+      <!--</span>-->
+    <!--</div>-->
+  <!--</div>-->
 </div>
   <header class="header">
   <app-menu-button></app-menu-button>
@@ -38,3 +38,7 @@
     </div>
   </div>
 </header>
+
+<a href="#home" class="home-button">
+  <div class="home-icon"></div>
+</a>

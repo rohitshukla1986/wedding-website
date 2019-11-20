@@ -105,6 +105,78 @@
   justify-content: flex-start;
 }
 
+.home-button {
+  width: 85px;
+  height: 80px;
+  background-color: white;
+  position: fixed;
+  bottom: 10px;
+  right: 3.5vw;
+  z-index: 5000;
+  border: 2px solid $gold-outline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //box-shadow: 0 1rem 2rem $dark-grey;
+}
+
+.home-icon {
+  position: relative;
+  background-color: transparent !important;
+  transform: rotate(90deg);
+}
+
+.home-icon,
+.home-icon::before,
+.home-icon::after {
+  width: 3rem;
+  height: 2px;
+  background: $dark-grey;
+  display: inline-block;
+}
+
+.home-icon::after {
+  top: 1rem;
+  transform: rotate(45deg);
+}
+
+.home-icon::before {
+  top: -1rem;
+  transform: rotate(-45deg);
+}
+
+.home-icon::before,
+.home-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all .2s;
+}
+
+.home-button:hover .home-icon::before {
+  left: -3.5rem;
+  top: -1.5rem;
+  width: 3.8rem;
+  height: 3.5px;
+  transform: rotate(-55deg);
+}
+
+.home-button:hover {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 0px;
+  //background-color: transparent;
+}
+
+.home-button:hover .home-icon::after {
+  left: -3.5rem;
+  top: 1.5rem;
+  width: 3.8rem;
+  height: 3.5px;
+  transform: rotate(55deg);
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
