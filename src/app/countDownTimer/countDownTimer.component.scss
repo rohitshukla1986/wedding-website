@@ -4,16 +4,6 @@
   display: flex;
   flex-direction: row;
   max-width: 100%;
-  position: relative;
-  top: 10px;
-
-  @media screen and (max-device-width: 480px) {
-    top: 0;
-  }
-
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    top: 0;
-  }
 }
 
 .count-down-container {
@@ -27,67 +17,42 @@
 }
 
 .interval-container {
-  clip-path: circle(50% at 50% 50%);
-  height:150px;
-  width:150px;
-  background-color: $dark-grey;
+  height:200px;
+  width:200px;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 10px;
   position: relative;
-  bottom: 115px;
 
   @media screen and (max-device-width: 480px) {
-    bottom: 30px;
     height:140px;
     width:140px;
   }
 
   @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    bottom: 6rem;
     height:160px;
     width:160px;
   }
 
   @media screen and (min-device-width: 1025px) and (max-device-width: 1366px) {
-    bottom: 11.5rem;
     height:170px;
     width:170px;
   }
-
 }
 
 .gold-border {
-  border: 2px solid $gold-outline;
+  border: 4px solid $gold-outline;
   border-radius: 200px;
 }
 
-.black-border {
-  border: 4px solid black;
+.seconds-counter {
+  border: 4px solid $pink;
   border-radius: 200px;
-}
-
-.proposal-img {
-  background-image: url("../../assets/img/proposal.png");
-  background-size: contain;
-}
-
-.cake-img {
-  background-image: url("../../assets/img/cake.png");
-  background-size: contain;
-}
-
-.honeymoon-img {
-  background-image: url("../../assets/img/trip.png");
-  background-size: contain;
-}
-
-.couple-img {
-  background-image: url("../../assets/img/couple.png");
-  background-size: contain;
 }
 
 .animate {
@@ -121,11 +86,6 @@
   color: $white;
   font-size:2rem;
   font-family: $primary-font;
-}
-
-.seconds-counter {
-  background-color: $pink;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .count-down-text {

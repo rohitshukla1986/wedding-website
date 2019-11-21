@@ -2,42 +2,25 @@
   <div class="heading-primary-container">
     <span class="heading-primary-sub">September 26th 2020 &#9829; Birmingham</span>
   </div>
-
-  <!--<div class="welcome-names-container">-->
-    <!--<div class="welcome-names-sub" *ngIf="(firstName && lastName) != undefined" >-->
-      <!--Welcome,-->
-      <!--<span>-->
-        <!--{{firstName}} {{lastName}}-->
-      <!--</span>-->
-    <!--</div>-->
-    <!--<div class="welcome-names-sub" *ngIf="(firstName && lastName) == undefined">-->
-      <!--Welcome,-->
-      <!--<span>-->
-        <!--Guest-->
-      <!--</span>-->
-    <!--</div>-->
-  <!--</div>-->
 </div>
   <header class="header">
   <app-menu-button></app-menu-button>
-  <div class="heading-container">
-    <h1 class="heading-primary">
-      <span class="heading-primary-main">Rohit & Raji</span>
-    </h1>
-  </div>
-  <div class="header-picture">
+    <div class="particles-container">
+      <div class="heading-container">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">Rohit & Raji</span>
+        </h1>
+      </div>
+        <!--<h2 class="heading-primary">-->
+          <!--<span class="heading-primary-main">Come and celebrate with us in...</span>-->
+        <!--</h2>-->
+      <particles [style]="myStyle" [width]="width" [height]="height" [params]="myParams"></particles>
+    </div>
     <div class="count-down-container">
       <app-count-down-timer></app-count-down-timer>
     </div>
-    <div class="rsvp-button-container">
-      <!--<app-rsvp-button-->
-        <!--(userDetails)="onButtonPress($event)"-->
-        <!--[firstName]="firstName"-->
-        <!--[lastName]="lastName"-->
-      <!--&gt;</app-rsvp-button>-->
-    </div>
-  </div>
 </header>
+
 
 <a href="#home" class="home-button">
   <div class="home-icon"></div>
