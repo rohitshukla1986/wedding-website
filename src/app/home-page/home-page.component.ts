@@ -12,7 +12,7 @@ export class HomePageComponent implements OnInit {
 
   myStyle: object = {};
   myParams: object = {};
-  width = 100;
+  width = 300;
   height = 100;
 
   constructor() {
@@ -34,42 +34,41 @@ export class HomePageComponent implements OnInit {
     this.myParams = {
       particles: {
         number: {
-          value: 500,
+          value: 50,
           density: {
             enable: true,
             value_area: 868.0624057955
           }
         },
         color: {
-          value: '#FFFFFF'
+          value: '#DAA520'
         },
         size: {
-          value: 2,
-          random: true,
+          value: 15,
+          random: false,
         },
         line_linked: {
           enable: false,
         },
         move: {
           enable: true,
-          speed: 2,
-          direction: 'top',
+          speed: 1,
+          direction: 'none',
           random: false,
-          straight: true,
-          bounce: false,
+          straight: false,
+          bounce: true,
         }
       },
       interactivity: {
         detect_on: 'canvas',
         events: {
           onhover: {
-            enable: true,
-            mode: 'repulse'
+            enable: false,
+            mode: 'grab'
           },
           modes: {
-            repulse: {
+            grab: {
               distance: 50,
-              duration: 0.4
             }
           }
         }
