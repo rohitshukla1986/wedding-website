@@ -20,6 +20,17 @@
   text-align: center;
   cursor: pointer;
   border: 2px solid $gold-outline;
+
+  @media screen and (max-device-width: 480px) {
+    background-color: transparent;
+    border: none;
+    height: 0;
+    width: 2rem;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
 }
 
 .navigation-background {
@@ -32,6 +43,18 @@
   background-image: radial-gradient(white,  rgba(52, 65, 72, 0.5));
   z-index: 1000;
   transition: 0.8s transform cubic-bezier(0.86, 0, 0.07, 1);
+
+  @media screen and (max-device-width: 480px) {
+    background-color: transparent;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-image: none;
+  }
 }
 
 .navigation-nav {
@@ -56,6 +79,10 @@
   align-items: flex-start;
   background-color: $pink;
   border: 4px dashed black;
+
+  @media screen and (max-device-width: 480px) {
+    width: 100%;
+  }
 }
 
 .navigation-item {
@@ -95,6 +122,11 @@
 .navigation-icon {
   position: relative;
   margin-top: 3.5rem;
+
+  @media screen and (max-device-width: 480px) {
+    margin-top: 2rem;
+    right: 1.5rem;
+  }
 }
 
 .navigation-icon,
@@ -104,6 +136,10 @@
   height: 2px;
   background: $dark-grey;
   display: inline-block;
+
+  @media screen and (max-device-width: 480px) {
+    background: white;
+  }
 }
 
 .navigation-icon::before,

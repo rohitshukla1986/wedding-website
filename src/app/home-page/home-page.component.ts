@@ -7,8 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  public firstName: string;
-  public lastName: string;
+  public barText = 'Rohit Weds Raji';
 
   myStyle: object = {};
   myParams: object = {};
@@ -75,10 +74,4 @@ export class HomePageComponent implements OnInit {
       }
     };
   }
-
-  onButtonPress(userDetails: any) {
-    this.firstName = userDetails['first_name'];
-    this.lastName = userDetails['last_name'];
-  }
-
 }

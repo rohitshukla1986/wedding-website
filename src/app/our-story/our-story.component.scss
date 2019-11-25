@@ -2,8 +2,11 @@
 
 .heading-primary {
   text-align: center;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  color: $dark-grey;
+  color: black;
+
+  @media screen and (max-device-width: 480px) {
+    display: none;
+  }
 }
 
 .heading-primary-main {
@@ -30,12 +33,21 @@
   overflow-y: scroll;
   overflow-x: auto;
   font: $secondary-font;
+
+  @media screen and (max-device-width: 480px) {
+    width: 80vw;
+  }
 }
 
 .story-area-container {
   position: absolute;
   height: 65vh;
   margin-top: 35vh;
+
+  @media screen and (max-device-width: 480px) {
+    margin-top: 15vh;
+    height: 80vh;
+  }
 }
 
 .main-container {
