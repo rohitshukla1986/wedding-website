@@ -16,7 +16,7 @@ import {FaqComponent} from './faq/faq.component';
 import {PhotoGalleryComponent} from './photo-gallery/photo-gallery.component';
 import {FaqCardComponent} from './faq/faq-card/faq-card.component';
 import {ParticlesModule} from 'angular-particle';
-import {AppRoutingModule} from "./app-routing.module";
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [

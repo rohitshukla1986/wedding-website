@@ -9,4 +9,9 @@ export class MenuButtonComponent {
 
   constructor() {
   }
+
+  scrollIntoView() {
+    const element = document.getElementById('router-outlet');
+    element.scrollIntoView();
+  }
 }
