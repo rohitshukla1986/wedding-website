@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -7,7 +7,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  public barText = 'Rohit Weds Raji';
+  @Input()
+  public mobileNavBarTitle: string;
 
   myStyle: object = {};
   myParams: object = {};
@@ -72,5 +73,9 @@ export class HomePageComponent implements OnInit {
         }
       }
     };
+  }
+
+  scrollToTop() {
+    window.scrollTo(0, 0);
   }
 }

@@ -1,20 +1,28 @@
 <div class="top-headings-container">
   <div class="heading-primary-container">
-    <span class="heading-primary-sub">September 26th 2020 &#9829; Birmingham</span>
+    <span class="heading-primary-sub">
+      September 26th 2020 &#9829; Birmingham
+    </span>
   </div>
 </div>
 <div class="mobile-nav-bar">
-  <h1 class="mobile-nav-bar-header">{{barText}}</h1>
+  <h1 class="mobile-nav-bar-header">
+    {{mobileNavBarTitle}}
+  </h1>
 </div>
   <header class="header">
   <app-menu-button></app-menu-button>
     <div class="particles-container">
       <div class="heading-container">
         <div class="heading-primary">
-          <h1 class="heading-primary-main">Rohit Weds Raji</h1>
+          <h1 class="heading-primary-main">
+            Rohit Weds Raji
+          </h1>
         </div>
         <div class="sub-header">
-          <h2>Come And Celebrate With Us In...</h2>
+          <h2>
+            Come And Celebrate With Us In...
+          </h2>
         </div>
         <div class="count-down-container">
           <app-count-down-timer></app-count-down-timer>
@@ -24,7 +32,6 @@
     </div>
 </header>
 
-
-<a href="#home" class="home-button">
+<a (click)="scrollToTop()" class="home-button">
   <div class="home-icon"></div>
 </a>
