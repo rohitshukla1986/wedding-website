@@ -1,33 +1,15 @@
 <html>
-<body>
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
-</head>
-
-<a id="home">
-  <app-home-page></app-home-page>
-</a>
-<main>
-  <a id="our-story">
-    <app-our-story></app-our-story>
+  <body>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  </head>
+  <a id="home">
+    <app-home-page></app-home-page>
   </a>
-  <a id="wedding-day">
-    <app-wedding-day></app-wedding-day>
-  </a>
-  <a id="other-events">
-    <app-other-events></app-other-events>
-  </a>
-  <a id="travel">
-    <app-travel></app-travel>
-  </a>
-  <a id="photo-gallery">
-    <app-photo-gallery></app-photo-gallery>
-  </a>
-  <a id="faq">
-    <app-faq></app-faq>
-  </a>
-</main>
-</body>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  </body>
 </html>
 
