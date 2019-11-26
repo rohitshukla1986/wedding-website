@@ -14,4 +14,9 @@ export class MenuButtonComponent {
     const element = document.getElementById('router-outlet');
     element.scrollIntoView();
   }
+
+  closeMenu() {
+    const checkbox = <HTMLInputElement>document.getElementById('navi-toggle');
+    checkbox.checked = false;
+  }
 }
