@@ -1,0 +1,42 @@
+<div class="navigation">
+  <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+  <label for="navi-toggle" class="navigation-button">
+    <span class="navigation-icon">
+    </span>
+  </label>
+  <div class="navigation-background"></div>
+  <nav class="navigation-nav">
+    <ul class="navigation-list">
+      <app-menu-item
+        [className]="'story-icon'"
+        [title]="'Our Story'"
+        [url]="'/ourStory'"
+      ></app-menu-item>
+      <app-menu-item
+        [className]="'wedding-day-icon'"
+        [title]="'Wedding Day'"
+        [url]="'/weddingDay'"
+      ></app-menu-item>
+      <app-menu-item
+        [className]="'other-events-icon'"
+        [title]="'Other Events'"
+        [url]="'/otherEvents'"
+      ></app-menu-item>
+      <app-menu-item
+        [className]="'travel-icon'"
+        [title]="'Travel'"
+        [url]="'/travel'"
+      ></app-menu-item>
+      <app-menu-item
+        [className]="'photo-icon'"
+        [title]="'Photo Gallery'"
+        [url]="'/photoGallery'"
+      ></app-menu-item>
+      <app-menu-item
+        [className]="'faq-icon'"
+        [title]="'FAQ'"
+        [url]="'/faq'"
+      ></app-menu-item>
+    </ul>
+  </nav>
+</div>

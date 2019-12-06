@@ -1,11 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { CountDownTimerComponent } from './countDownTimer/countDownTimer.component';
-import { RsvpButtonComponent } from './rsvp-button/rsvpButton.component';
-import { MenuButtonComponent } from './menu-button/menuButton.component';
-import { OurStoryComponent } from './our-story/our-story.component';
+import {AppComponent} from './app.component';
+import {CountDownTimerComponent} from './countDownTimer/countDownTimer.component';
+import {RsvpButtonComponent} from './rsvp-button/rsvpButton.component';
+import {MenuComponent} from './menu/menu.component';
+import {OurStoryComponent} from './our-story/our-story.component';
 import {ModalComponent} from './modal/modal.component';
 import {ModalService} from './modal/modal.service';
 import {HomePageComponent} from './home-page/home-page.component';
@@ -17,13 +17,15 @@ import {PhotoGalleryComponent} from './photo-gallery/photo-gallery.component';
 import {FaqCardComponent} from './faq/faq-card/faq-card.component';
 import {ParticlesModule} from 'angular-particle';
 import {AppRoutingModule} from './app-routing.module';
+import {MenuItemComponent} from './menu/menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CountDownTimerComponent,
     RsvpButtonComponent,
-    MenuButtonComponent,
+    MenuComponent,
+    MenuItemComponent,
     OurStoryComponent,
     ModalComponent,
     HomePageComponent,
