@@ -20,7 +20,7 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.myStyle = {
-      'position': 'absolute',
+      'position': 'fixed',
       'width': '100%',
       'height': '100%',
       'z-index': -1,
@@ -33,17 +33,17 @@ export class HomePageComponent implements OnInit {
     this.myParams = {
       particles: {
         number: {
-          value: 100,
+          value: 150,
           density: {
             enable: true,
             value_area: 868.0624057955
           }
         },
         color: {
-          value: '#DAA520'
+          value: '#FFFFFF'
         },
         size: {
-          value: 10,
+          value: 20,
           random: true,
         },
         line_linked: {
