@@ -18,6 +18,8 @@ import {FaqCardComponent} from './faq/faq-card/faq-card.component';
 import {ParticlesModule} from 'angular-particle';
 import {AppRoutingModule} from './app-routing.module';
 import {MenuItemComponent} from './menu/menu-item/menu-item.component';
+import {StoryButtonComponent} from './our-story/story-button/story-button.component';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 @NgModule({
   declarations: [
@@ -34,12 +36,14 @@ import {MenuItemComponent} from './menu/menu-item/menu-item.component';
     TravelComponent,
     PhotoGalleryComponent,
     FaqComponent,
-    FaqCardComponent
+    FaqCardComponent,
+    StoryButtonComponent
   ],
   imports: [
     BrowserModule,
     ParticlesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxGalleryModule
   ],
   providers: [
     ModalService,

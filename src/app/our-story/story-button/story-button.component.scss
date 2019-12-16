@@ -1,0 +1,51 @@
+@import '../../common-styles';
+
+.story-button-container {
+  width: 100%;
+}
+
+.checkbox {
+  display: none;
+}
+
+.story-button-1,
+.story-button-2 {
+  width: 20rem;
+  height: 20rem;
+  background-size: cover;
+  border: 4px solid black;
+  border-radius: 20rem;
+  z-index: 10000;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.story-button-1 {
+  background-image: url('../../../assets/img/story1.jpg');
+}
+
+.story-button-2 {
+  background-image: url('../../../assets/img/story2.jpg');
+}
+
+.story-area {
+  height: 0;
+  width: 100%;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.checkbox:checked ~ .story-area {
+  height: 75vh;
+  width: 100%;
+  border: 2px dashed black;
+  opacity: 1;
+}
+
+.checkbox:checked ~ .story-button-1,
+.checkbox:checked ~ .story-button-2 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10rem;
+}

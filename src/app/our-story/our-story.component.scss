@@ -1,5 +1,12 @@
 @import '../common-styles';
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
 .heading-primary {
   text-align: center;
   color: black;
@@ -26,24 +33,16 @@
   clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%);
 }
 
-.story-area {
-  height: 100%;
-  background-color: $white;
-  width: 75vw;
-  border: 4px black dashed;
-  overflow-y: scroll;
-  overflow-x: auto;
-  font: $secondary-font;
-
-  @media screen and (max-device-width: 480px) {
-    width: 80vw;
-  }
-}
-
 .story-area-container {
   position: absolute;
   height: 65vh;
   margin-top: 35vh;
+  width: 75vw;
+  font-size: 2rem;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
   @media screen and (max-device-width: 480px) {
     margin-top: 15vh;
@@ -51,32 +50,22 @@
   }
 }
 
-.main-container {
+.story-button-container {
+  width: 33.33vw;
+  text-align: center;
+}
+
+.heart-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 33.33vw;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: $dark-grey;
-  opacity: 0.5;
-  border: $gold-outline 2px solid;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $gold-outline;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: darkgoldenrod;
+.heart {
+  width: 50%;
+  height: 50%;
+  background-image: url('../../assets/img/heart.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }

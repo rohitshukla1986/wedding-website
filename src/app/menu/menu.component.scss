@@ -61,7 +61,7 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100px;
   z-index: 1500;
   opacity: 0;
   width: 0;
@@ -162,4 +162,3 @@
 .navigation-checkbox:not(:checked) ~ .navigation-nav .navigation-list .navigation-item .navigation-item-container .navigation-link {
   pointer-events: none;
 }
-
