@@ -6,29 +6,62 @@
   </div>
 
   <div class="story-area-container">
-    <div class="story-button-container">
-      <app-story-button
-        [storyText]="'Once upon a time there lived a handsome young man by the name of Ro.
-        Ro was an accomplished young man with a 100kg bench press, degree in mechanical engineering
-        and a love for dinosaurs and coding.'"
-        [id]="'story-toggle-1'"
-        [buttonClassName]="'story-button-1'"
-      ></app-story-button>
+
+    <div class="flex-grid">
+      <div class="col">
+        <app-story-button
+          [title]="'Rohit'"
+          [imageName]="'story1.jpg'"
+          [storyText]="'Once upon a time there lived a handsome young man by the name of Ro. Ro was an accomplished young man with a 100kg bench press, degree in mechanical engineering and a love for dinosaurs and coding.'"
+        ></app-story-button>
+        <app-story-button
+          [title]="'button'"
+          [imageName]="'ring.png'"
+          [storyText]="''"
+        ></app-story-button>
+        <app-story-button
+          [title]="'button'"
+          [imageName]="'ring.png'"
+          [storyText]="''"
+        ></app-story-button>
+      </div>
+
+      <div class="col">
+        <app-story-button
+          [title]="'Raji'"
+          [imageName]="'story2.jpg'"
+          [storyText]="'In a distant land far far away, in the kingdom of nottinghamshire lived a beautiful young lady by the name of Raji. Raji was a manager at the o2 store there, a smart and kind lady she was, for she had studied business and law, loved doggies and bubble tea.'"
+        ></app-story-button>
+        <app-story-button
+          [title]="'button'"
+          [imageName]="'ring.png'"
+          [storyText]="''"
+        ></app-story-button>
+        <app-story-button
+          [title]="'button'"
+          [imageName]="'ring.png'"
+          [storyText]="''"
+        ></app-story-button>
+      </div>
+
+      <div class="col">
+        <app-story-button
+          [title]="'button'"
+          [imageName]="'ring.png'"
+          [storyText]="''"
+        ></app-story-button>
+        <app-story-button
+          [title]="'button'"
+          [imageName]="'ring.png'"
+          [storyText]="''"
+        ></app-story-button>
+        <app-story-button
+          [title]="'button'"
+          [imageName]="'ring.png'"
+          [storyText]="''"
+        ></app-story-button>
+      </div>
     </div>
 
-    <div class="heart-container">
-      <div class="heart"></div>
-    </div>
-
-    <div class="story-button-container">
-      <app-story-button
-        [storyText]="'In a distant land far far away, in the kingdom of nottinghamshire lived a
-        beautiful young lady by the name of Raji. Raji was a manager at the o2 store there, a smart
-        and kind lady she was, for she had studied business and law, loved doggies and bubble tea.'"
-        [id]="'story-toggle-2'"
-        [buttonClassName]="'story-button-2'"
-      ></app-story-button>
-    </div>
   </div>
-
 </div>

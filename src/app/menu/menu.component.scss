@@ -61,7 +61,7 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  left: -100px;
+  left: -200px;
   z-index: 1500;
   opacity: 0;
   width: 0;
@@ -92,6 +92,7 @@
 .navigation-checkbox:checked ~ .navigation-nav {
   opacity: 1;
   width: 100%;
+  left: 200px;
 }
 
 .navigation-icon {

@@ -69,3 +69,14 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.flex-grid {
+  display: flex;
+
+  @media (max-width: 450px) {
+    display: block;
+  }
+}
+.col {
+  flex: 1;
+}

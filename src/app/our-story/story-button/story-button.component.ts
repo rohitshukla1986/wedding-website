@@ -1,4 +1,4 @@
-import {Component, Input, Output, EventEmitter} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-story-button',
@@ -11,13 +11,10 @@ export class StoryButtonComponent {
   public storyText: string;
 
   @Input()
-  public id: string;
+  public title: string;
 
   @Input()
-  public buttonClassName: string;
-
-  @Output()
-  public valueChange = new EventEmitter();
+  public imageName: string;
 
   constructor() {
   }
