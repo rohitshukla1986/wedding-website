@@ -7,7 +7,12 @@ import {Component} from '@angular/core';
 })
 export class OurStoryComponent {
 
+  public flip = false;
+
   constructor() {
   }
 
+  flipCard() {
+      this.flip = !this.flip;
+  }
 }
