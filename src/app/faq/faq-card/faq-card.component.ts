@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-faq-card',
@@ -7,7 +7,15 @@ import {Component} from '@angular/core';
 })
 export class FaqCardComponent {
 
+  @Input()
+  public text: string;
+
+  @Input()
+  public title: string;
+
+  @Input()
+  public imageName: string;
+
   constructor() {
   }
-
 }

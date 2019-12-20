@@ -14,12 +14,11 @@ import {OtherEventsComponent} from './other-events/other-events.component';
 import {TravelComponent} from './travel/travel.component';
 import {FaqComponent} from './faq/faq.component';
 import {PhotoGalleryComponent} from './photo-gallery/photo-gallery.component';
-import {FaqCardComponent} from './faq/faq-card/faq-card.component';
 import {ParticlesModule} from 'angular-particle';
 import {AppRoutingModule} from './app-routing.module';
 import {MenuItemComponent} from './menu/menu-item/menu-item.component';
-import {StoryButtonComponent} from './our-story/story-button/story-button.component';
-import { NgxGalleryModule } from 'ngx-gallery';
+import {NgxGalleryModule} from 'ngx-gallery';
+import {FaqCardComponent} from './faq/faq-card/faq-card.component';
 
 @NgModule({
   declarations: [
@@ -36,8 +35,7 @@ import { NgxGalleryModule } from 'ngx-gallery';
     TravelComponent,
     PhotoGalleryComponent,
     FaqComponent,
-    FaqCardComponent,
-    StoryButtonComponent
+    FaqCardComponent
   ],
   imports: [
     BrowserModule,
