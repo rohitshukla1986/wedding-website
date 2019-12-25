@@ -55,21 +55,6 @@
   text-align: center;
 }
 
-.heart-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 33.33vw;
-}
-
-.heart {
-  width: 50%;
-  height: 50%;
-  background-image: url('../../assets/img/heart.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .book-container {
   display: flex;
   width: 100%;
@@ -78,7 +63,7 @@
 }
 
 #cardflip {
-  width: 80%;
+  width: 95%;
   height: 90%;
   position: relative;
   perspective: 800px;
@@ -181,24 +166,22 @@
 }
 
 
-@-webkit-keyframes uparrow {
-  0% { -webkit-transform: translateX(0); opacity: 0.4 }
-  100% { -webkit-transform: translateX(-0.4em); opacity: 0.9 }
+@-webkit-keyframes pointerright {
+  0% { -webkit-transform: translateX(0); }
+  100% { -webkit-transform: translateX(-0.4em); }
 }
 
-.arrow {
+.pointer {
   display:block;
-  height:0;
-  opacity:0.4;
+  height:120px;
+  width:150px;
   text-indent:-9999px;
   transform-origin: 50% 50%;
-  width:0;
-
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid red;
+  background-image: url("../../assets/img/point2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.up {
-  -webkit-animation: uparrow 0.6s infinite alternate ease-in-out;
+.right {
+  -webkit-animation: pointerright 0.6s infinite alternate ease-in-out;
 }
