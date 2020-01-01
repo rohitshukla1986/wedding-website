@@ -101,10 +101,26 @@
   align-items: flex-start;
   justify-content: center;
   height: 50%;
+  width: 100%;
+  flex-direction: row;
 
   @media screen and (max-device-width: 480px) {
     padding-top: 18.9%;
   }
+}
+
+.ro-avatar {
+  width: 20%;
+  height: 100%;
+  background-image: url('../../assets/img/ro_avatar1.png');
+  background-repeat: no-repeat;
+}
+
+.raji-avatar {
+  width: 20%;
+  height: 100%;
+  background-image: url('../../assets/img/raji_avatar1.png');
+  background-repeat: no-repeat;
 }
 
 .rsvp-button-container {
