@@ -28,8 +28,39 @@
   padding-bottom: 30px;
 }
 
-.a {
-  height: 20px;
-  width: 20px;
-  background-color: #ec9a98;
+.day-start-image {
+  background-image: url('../../assets/img/raji_avatar2.png');
+}
+
+.arrive-template-image {
+  background-image: url('../../assets/img/ro_avatar2.png');
+}
+
+.hindu-ceremony-image {
+  background-image: url('../../assets/img/raji_avatar3.png');
+}
+
+.drinks-reception-image {
+  background-image: url('../../assets/img/ro_avatar3.png');
+}
+
+.party-image {
+  background-image: url('../../assets/img/raji_avatar4.png');
+}
+
+.timeline-item-image {
+  height: 100px;
+  width: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.timeline-item-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.timeline-item-title {
+  width: 100%;
+  align-self: center;
 }
