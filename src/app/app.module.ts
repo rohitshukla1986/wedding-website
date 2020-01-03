@@ -19,8 +19,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {MenuItemComponent} from './menu/menu-item/menu-item.component';
 import {NgxGalleryModule} from 'ngx-gallery';
 import {FaqCardComponent} from './faq/faq-card/faq-card.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {MglTimelineModule} from "angular-mgl-timeline";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MglTimelineModule} from 'angular-mgl-timeline';
 
 @NgModule({
   declarations: [
