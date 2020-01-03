@@ -20,14 +20,67 @@
   font-family: $primary-font;
 }
 
-.header {
-  width: 100%;
-  height: 100vh;
-  //background-color: $pink;
-}
-
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100vh;
 }
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.location-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.location-info-container {
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+  border: 2px solid black;
+  padding: 10px 10px 5px 10px
+}
+
+.location-addresses {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.location-map {
+  width: 100%;
+  height: 100%;
+}
+
+.locations-header {
+  color: black;
+  text-align: start;
+  padding-right: 10px;
+  min-width: fit-content;
+}
+
+.locations-header-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.location-header-line {
+  border: 2px solid black;
+  width: 100%;
+  height: 0;
+  align-self: center;
+}
+
+
