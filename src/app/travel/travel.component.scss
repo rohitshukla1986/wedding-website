@@ -126,8 +126,7 @@
   flex-direction: column;
 }
 
-.premierinn-container,
-.travelodge-container {
+.hotel-container {
   width: 100%;
   height: 30vh;
   border: 2px solid black;
@@ -152,8 +151,39 @@
   background-repeat: no-repeat;
 }
 
-.premierinn-items,
-.travelodge-items {
+.copthorne-logo {
+  width: 25%;
+  height: 100%;
+  background-image: url('../../assets/img/copthorne.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jurysinn-logo {
+  width: 25%;
+  height: 100%;
+  background-image: url('../../assets/img/jurysinn.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hilton-logo {
+  width: 25%;
+  height: 100%;
+  background-image: url('../../assets/img/hilton.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.novotel-logo {
+  width: 25%;
+  height: 100%;
+  background-image: url('../../assets/img/novotel.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hotel-items {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
