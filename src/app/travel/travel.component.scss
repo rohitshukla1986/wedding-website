@@ -135,6 +135,10 @@
   margin-bottom: 10px;
 }
 
+.hotel-container:hover {
+  background-color: pink;
+}
+
 .travelodge-logo {
   width: 25%;
   height: 100%;
@@ -179,6 +183,30 @@
   width: 25%;
   height: 100%;
   background-image: url('../../assets/img/novotel.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.parkregis-logo {
+  width: 25%;
+  height: 100%;
+  background-image: url('../../assets/img/parkregis.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clayton-logo {
+  width: 25%;
+  height: 100%;
+  background-image: url('../../assets/img/clayton.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hyatt-logo {
+  width: 25%;
+  height: 100%;
+  background-image: url('../../assets/img/hyatt.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }

@@ -124,12 +124,12 @@
 }
 
 .story-row {
-  display: flex;
-  flex-direction: row;
   overflow-y: scroll;
   overflow-x: auto;
   max-height: 100%;
   font-size: 2rem;
+  text-align: start;
+  padding: 10px;
 }
 
 .click-here {
@@ -187,4 +187,25 @@
 
 .right {
   -webkit-animation: pointerright 0.6s infinite alternate ease-in-out;
+}
+
+.story-picture {
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.story-picture-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.story-pic-1 {
+  background-image: url('../../assets/img/storypic1.png');
+}
+
+.story-pic-2 {
+  background-image: url('../../assets/img/storypic2.png');
 }
