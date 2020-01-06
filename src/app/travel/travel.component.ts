@@ -10,4 +10,7 @@ export class TravelComponent {
   constructor() {
   }
 
+  goToLink(url: string) {
+    window.open(url);
+  }
 }

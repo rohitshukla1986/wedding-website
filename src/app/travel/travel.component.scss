@@ -11,6 +11,10 @@
   }
 }
 
+.checked {
+  color: orange;
+}
+
 .heading-primary-main {
   display: block;
   font-size: 10vw;
@@ -120,7 +124,7 @@
   align-items: center;
 }
 
-.low-price-hotel-container {
+.hotel-group-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -133,10 +137,18 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
+  z-index: 500;
+  transition: all 0.4s;
 }
 
-.hotel-container:hover {
-  background-color: pink;
+.hotel-container:hover,
+.hotel-container:active {
+  background-position: 100%;
+  color: $white;
+  transform: translateX(1rem);
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $pink 50%);
+  background-size: 240%;
+  cursor: pointer;
 }
 
 .travelodge-logo {
