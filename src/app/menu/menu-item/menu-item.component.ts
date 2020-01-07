@@ -16,11 +16,14 @@ export class MenuItemComponent {
   @Input()
   public title: string;
 
+  @Input()
+  public elementName: string;
+
   constructor() {
   }
 
   scrollIntoView() {
-    const element = document.getElementById('router-outlet');
+    const element = document.getElementById(this.elementName);
     element.scrollIntoView();
   }
 

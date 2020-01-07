@@ -33,7 +33,7 @@ export class HomePageComponent implements OnInit {
     this.myParams = {
       particles: {
         number: {
-          value: 150,
+          value: 0,
           density: {
             enable: true,
             value_area: 868.0624057955
