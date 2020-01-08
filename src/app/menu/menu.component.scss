@@ -158,3 +158,21 @@
 .navigation-checkbox:not(:checked) ~ .navigation-nav .navigation-list .navigation-item .navigation-item-container .navigation-link {
   pointer-events: none;
 }
+
+.navigation-nav-header {
+  display: none;
+}
+
+.onScrollHeader {
+  display: flex;
+  font-family: $primary-font;
+  width: 50%;
+  font-size: 2.5rem;
+  padding-left: 15px;
+  align-self: center;
+  font-weight: bold;
+  color: black;
+  @media screen and (max-device-width: 480px) {
+    display: none;
+  }
+}

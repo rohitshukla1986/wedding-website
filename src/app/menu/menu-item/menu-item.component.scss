@@ -14,12 +14,13 @@
   color: black;
   text-decoration: none;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $dark-grey 50%);
-  padding: 0.5rem 2rem;
   background-size: 240%;
   transition: all 0.4s;
+  padding: 5px 0.5rem 0;
 
   @media screen and (max-device-width: 480px) {
     font-size: 2rem;
+    padding: 0 2rem 0.5rem;
   }
 }
 
@@ -30,52 +31,45 @@
   transform: translateX(1rem);
 }
 
-.story-icon {
-  background-image: url("../../../assets/img/book.png");
-  width:50px;
-  height:50px;
+.story-icon,
+.wedding-day-icon,
+.other-events-icon,
+.travel-icon,
+.photo-icon,
+.faq-icon {
+  width:30px;
+  height:30px;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media screen and (max-device-width: 480px) {
+    width:50px;
+    height:50px;
+  }
+}
+
+.story-icon {
+  background-image: url("../../../assets/img/book.png");
 }
 
 .wedding-day-icon {
   background-image: url("../../../assets/img/wedding-day.png");
-  width:50px;
-  height:50px;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .other-events-icon {
   background-image: url("../../../assets/img/disco-ball.png");
-  width:50px;
-  height:50px;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .travel-icon {
   background-image: url("../../../assets/img/suitcase.png");
-  width:50px;
-  height:50px;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .photo-icon {
   background-image: url("../../../assets/img/camera.png");
-  width:50px;
-  height:50px;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .faq-icon {
   background-image: url("../../../assets/img/question.png");
-  width:50px;
-  height:50px;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .navigation-item-container {
@@ -83,5 +77,3 @@
   align-items: center;
   justify-content: center;
 }
-
-
