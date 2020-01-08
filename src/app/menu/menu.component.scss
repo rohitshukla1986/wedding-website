@@ -160,10 +160,22 @@
 }
 
 .navigation-nav-header {
-  display: none;
+  position: relative;
+  left: -300px;
+  transition: all .4s;
+  display: flex;
+  align-self: center;
+  font-family: $primary-font;
+  font-size: 2.5rem;
+
+  @media screen and (max-device-width: 480px) {
+    display: none;
+  }
 }
 
 .onScrollHeader {
+  position: relative;
+  left: 0;
   display: flex;
   font-family: $primary-font;
   width: 50%;
@@ -172,6 +184,7 @@
   align-self: center;
   font-weight: bold;
   color: black;
+  
   @media screen and (max-device-width: 480px) {
     display: none;
   }
