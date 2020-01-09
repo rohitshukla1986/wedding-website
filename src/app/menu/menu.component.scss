@@ -192,8 +192,10 @@
 
 .onScrollList {
   justify-content: flex-end;
+  border: none;
 
   @media screen and (max-device-width: 480px) {
     justify-content: normal;
+    border: 4px dashed black;
   }
 }

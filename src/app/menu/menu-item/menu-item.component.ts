@@ -19,6 +19,9 @@ export class MenuItemComponent {
   @Input()
   public elementName: string;
 
+  @Input()
+  public topOfPage: string;
+
   constructor() {
   }
 

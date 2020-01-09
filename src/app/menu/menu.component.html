@@ -9,36 +9,42 @@
     <ul class="navigation-list" [ngClass]="{'onScrollList': !topOfPage }">
       <div class="navigation-nav-header" [ngClass]="{'onScrollHeader': !topOfPage }">Rohit Weds Raji</div>
       <app-menu-item
+        [topOfPage]="topOfPage"
         [className]="'story-icon'"
         [title]="'Our Story'"
         [url]="'/ourStory'"
         [elementName]="'our-story'"
       ></app-menu-item>
       <app-menu-item
+        [topOfPage]="topOfPage"
         [className]="'wedding-day-icon'"
         [title]="'Wedding Day'"
         [url]="'/weddingDay'"
         [elementName]="'wedding-day'"
       ></app-menu-item>
       <app-menu-item
+        [topOfPage]="topOfPage"
         [className]="'other-events-icon'"
         [title]="'Other Events'"
         [url]="'/otherEvents'"
         [elementName]="'other-events'"
       ></app-menu-item>
       <app-menu-item
+        [topOfPage]="topOfPage"
         [className]="'travel-icon'"
         [title]="'Travel'"
         [url]="'/travel'"
         [elementName]="'travel'"
       ></app-menu-item>
       <app-menu-item
+        [topOfPage]="topOfPage"
         [className]="'photo-icon'"
         [title]="'Photo Gallery'"
         [url]="'/photoGallery'"
         [elementName]="'photo-gallery'"
       ></app-menu-item>
       <app-menu-item
+        [topOfPage]="topOfPage"
         [className]="'faq-icon'"
         [title]="'FAQ'"
         [url]="'/faq'"
