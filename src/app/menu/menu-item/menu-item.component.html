@@ -1,6 +1,6 @@
 <li (click)="scrollIntoView(); closeMenu()" class="navigation-item">
   <div class="navigation-item-container">
     <div class="{{className}}" [ngClass]="{'onScrollImage': topOfPage}"></div>
-    <a [routerLink]=url class="navigation-link">{{title}}</a>
+    <a [routerLink]=url class="navigation-link" [ngClass]="{'highlightSection': elementName === currentSection}">{{title}}</a>
   </div>
 </li>

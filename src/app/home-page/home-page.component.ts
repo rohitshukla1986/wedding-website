@@ -10,6 +10,9 @@ export class HomePageComponent implements OnInit {
   @Input()
   public mobileNavBarTitle: string;
 
+  @Input()
+  public currentSection: string;
+
   myStyle: object = {};
   myParams: object = {};
   width = 300;

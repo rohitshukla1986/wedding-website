@@ -1,5 +1,6 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {$} from "protractor";
 
 @Component({
   selector: 'app-root',
@@ -9,26 +10,26 @@ import {Router} from '@angular/router';
 export class AppComponent {
   title = 'Wedding Website';
   public mobileNavBarTitle = 'Rohit Weds Raji';
+  currentSection = '';
 
   constructor(private router: Router) {}
 
-  public changeMobileNavBarTitleOnScroll(url: string) {
-    const sectionTitle = url.split('/')[1]
+  public changeMobileNavBarTitleOnScroll(currentSection: string) {
+    const sectionTitle = currentSection
       .replace(/([A-Z])/g, ' $1')
       .replace(/^./, function(str) {
         return str.toUpperCase();
       });
 
-    const scrollDistanceFromTop = document.documentElement.scrollTop;
-    if (scrollDistanceFromTop > 600) {
+    if (currentSection !== '') {
       this.mobileNavBarTitle = sectionTitle;
     } else {
       this.mobileNavBarTitle = 'Rohit Weds Raji';
     }
   }
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    this.changeMobileNavBarTitleOnScroll(this.router.url);
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+    this.changeMobileNavBarTitleOnScroll(this.currentSection);
   }
 }

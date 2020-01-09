@@ -22,6 +22,9 @@ export class MenuItemComponent {
   @Input()
   public topOfPage: string;
 
+  @Input()
+  public currentSection: string;
+
   constructor() {
   }
 
