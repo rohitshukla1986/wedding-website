@@ -143,6 +143,10 @@
 .click-here-container {
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-device-width: 480px) {
+    display: none;  //maybe change later
+  }
 }
 
 /* width */

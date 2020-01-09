@@ -30,6 +30,9 @@ export class AppComponent {
 
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
-    this.changeMobileNavBarTitleOnScroll(this.currentSection);
+
+    if (sectionId !== undefined) {
+      this.changeMobileNavBarTitleOnScroll(this.currentSection);
+    }
   }
 }
