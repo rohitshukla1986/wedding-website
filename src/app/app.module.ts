@@ -1,13 +1,9 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
 import {AppComponent} from './app.component';
 import {CountDownTimerComponent} from './countDownTimer/countDownTimer.component';
-import {RsvpButtonComponent} from './rsvp-button/rsvpButton.component';
 import {MenuComponent} from './menu/menu.component';
 import {OurStoryComponent} from './our-story/our-story.component';
-import {ModalComponent} from './modal/modal.component';
-import {ModalService} from './modal/modal.service';
 import {HomePageComponent} from './home-page/home-page.component';
 import {WeddingDayComponent} from './wedding-day/wedding-day.component';
 import {OtherEventsComponent} from './other-events/other-events.component';
@@ -18,7 +14,6 @@ import {ParticlesModule} from 'angular-particle';
 import {AppRoutingModule} from './app-routing.module';
 import {MenuItemComponent} from './menu/menu-item/menu-item.component';
 import {NgxGalleryModule} from 'ngx-gallery';
-import {FaqCardComponent} from './faq/faq-card/faq-card.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MglTimelineModule} from 'angular-mgl-timeline';
 import {ScrollSpyDirective} from './app-scroll-spy.directive';
@@ -27,18 +22,15 @@ import {ScrollSpyDirective} from './app-scroll-spy.directive';
   declarations: [
     AppComponent,
     CountDownTimerComponent,
-    RsvpButtonComponent,
     MenuComponent,
     MenuItemComponent,
     OurStoryComponent,
-    ModalComponent,
     HomePageComponent,
     WeddingDayComponent,
     OtherEventsComponent,
     TravelComponent,
     PhotoGalleryComponent,
     FaqComponent,
-    FaqCardComponent,
     ScrollSpyDirective
   ],
   imports: [
@@ -50,7 +42,6 @@ import {ScrollSpyDirective} from './app-scroll-spy.directive';
     MglTimelineModule
   ],
   providers: [
-    ModalService,
   ],
   bootstrap: [AppComponent]
 })

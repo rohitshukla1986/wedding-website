@@ -23,7 +23,6 @@ export class PhotoGalleryComponent implements OnInit {
               thumbnailsRows: 5,
               image: false,
             },
-            // max-width 800
             {
               breakpoint: 800,
               width: '100%',
@@ -36,15 +35,16 @@ export class PhotoGalleryComponent implements OnInit {
               layout: NgxGalleryLayout.ThumbnailsTop,
               image: false
             },
-            // max-width 400
             {
               breakpoint: 480,
+              width: '100%',
+              height: '100%',
               preview: true,
               imageSize: NgxGalleryImageSize.Contain,
               layout: NgxGalleryLayout.ThumbnailsTop,
               image: false,
-              thumbnailsColumns: 5,
-              thumbnailsRows: 4,
+              thumbnailsColumns: 4,
+              thumbnailsRows: 5
             }
         ];
 
