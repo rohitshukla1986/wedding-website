@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize } from 'ngx-gallery';
+import {NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize, NgxGalleryLayout} from 'ngx-gallery';
 
 @Component({
   selector: 'app-photo-gallery',
@@ -14,26 +14,37 @@ export class PhotoGalleryComponent implements OnInit {
 
         this.galleryOptions = [
             {
-                width: '100%',
-                height: '100%',
-                thumbnailsColumns: 20,
-                imageAnimation: NgxGalleryAnimation.Slide,
-                imageSize: NgxGalleryImageSize.Contain
+              width: '100%',
+              height: '100%',
+              imageAnimation: NgxGalleryAnimation.Slide,
+              imageSize: NgxGalleryImageSize.Contain,
+              layout: NgxGalleryLayout.ThumbnailsTop,
+              thumbnailsColumns: 4,
+              thumbnailsRows: 5,
+              image: false,
             },
             // max-width 800
             {
-                breakpoint: 800,
-                width: '100%',
-                height: '600px',
-                imagePercent: 80,
-                thumbnailsPercent: 20,
-                thumbnailsMargin: 20,
-                thumbnailMargin: 20
+              breakpoint: 800,
+              width: '100%',
+              height: '600px',
+              imagePercent: 80,
+              thumbnailsPercent: 20,
+              thumbnailsMargin: 20,
+              thumbnailMargin: 20,
+              imageSize: NgxGalleryImageSize.Contain,
+              layout: NgxGalleryLayout.ThumbnailsTop,
+              image: false
             },
             // max-width 400
             {
-                breakpoint: 400,
-                preview: false
+              breakpoint: 480,
+              preview: true,
+              imageSize: NgxGalleryImageSize.Contain,
+              layout: NgxGalleryLayout.ThumbnailsTop,
+              image: false,
+              thumbnailsColumns: 5,
+              thumbnailsRows: 4,
             }
         ];
 

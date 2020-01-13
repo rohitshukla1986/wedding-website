@@ -22,10 +22,9 @@
 
 .main {
   width: 100%;
-  height: fit-content;
-  background-image: url('../../assets/img/bg18.jpg');
   background-size: cover;
   background-position: -15px;
+  height: 100vh;
 }
 
 .main-container {
@@ -33,4 +32,5 @@
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+  height: 100vh;
 }

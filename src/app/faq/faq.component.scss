@@ -28,17 +28,14 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  height: 100vh;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  z-index: 5000;
 }
 
 .accordion {
@@ -47,20 +44,37 @@
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  text-align: left;
   border: none;
+  text-align: left;
   outline: none;
+  font-size: 15px;
   transition: 0.4s;
-  margin-bottom: 20px;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: $pink;
 }
 
 .panel {
-  padding: 0 18px;
   background-color: white;
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: $pink;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.panelExpand {
+  max-height: fit-content;
+}
+
