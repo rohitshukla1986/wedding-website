@@ -5,6 +5,11 @@
   flex-direction: column;
   height: 100vh;
   align-items: center;
+  margin-top: 32px;
+
+  @media screen and (max-device-width: 480px) {
+    margin-top: 0;
+  }
 }
 
 .particles-container {
@@ -17,6 +22,7 @@
 
 .heading-primary {
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
   color: black;
   text-align: center;
@@ -28,12 +34,12 @@
 }
 
 .heading-primary-main {
-  display: block;
   font-size: 9rem;
   font-weight: 400;
   letter-spacing: 1vw;
   animation: moveInLeft 1s ease-out;
   font-family: $primary-font;
+  height: 80%;
 
   @media screen and (max-device-width: 480px) {
     font-size: 2rem;
@@ -44,14 +50,26 @@
   }
 }
 
+.heading-primary-main-container {
+  display: flex;
+  height: 65%;
+  align-items: flex-end;
+}
+
 .heading-primary-sub {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   font-family: $primary-font;
-  display: block;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.5vw;
   animation: moveInRight 1s ease-out;
   color: black;
+
+  @media screen and (max-device-width: 480px) {
+    display: none;
+  }
 }
 
 .sub-header {
@@ -64,6 +82,13 @@
   @media screen and (max-device-width: 480px) {
     display: none;
   }
+}
+
+.line {
+  width: 40%;
+  border: 2px solid black;
+  height: 0;
+  align-self: center;
 }
 
 .mobile-nav-bar {
