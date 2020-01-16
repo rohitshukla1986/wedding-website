@@ -3,10 +3,24 @@
 .heading-primary {
   text-align: center;
   color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 
   @media screen and (max-device-width: 480px) {
     display: none;
   }
+}
+
+.line {
+  height: 0;
+  width: 15%;
+  border: 2px solid black;
+}
+
+.dot {
+  background-color: $pink;
 }
 
 .heading-primary-main {
@@ -21,6 +35,7 @@
 .main {
   height: fit-content;
   padding-top: 30px;
+  z-index: 5000;
 }
 
 .sub-header {

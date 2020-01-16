@@ -7,7 +7,10 @@
   <div class="navigation-background"></div>
   <nav class="navigation-nav">
     <ul class="navigation-list" [ngClass]="{'onScrollList': !topOfPage }">
-      <div class="navigation-nav-header" [ngClass]="{'onScrollHeader': !topOfPage }">Rohit Weds Raji</div>
+      <div class="navigation-nav-header" [ngClass]="{'onScrollHeader': !topOfPage }">
+        <p class="navigation-nav-title">Rohit Weds Raji</p>
+        <p class="navigation-nav-date">26/09/2020</p>
+      </div>
       <app-menu-item
         [currentSection]="currentSection"
         [topOfPage]="topOfPage"

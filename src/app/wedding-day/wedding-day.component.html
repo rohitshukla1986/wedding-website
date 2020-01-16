@@ -1,12 +1,13 @@
 <div class="main">
   <h1 class="heading-primary">
+    <div class="line"></div>
     <span class="heading-primary-main">Wedding Day</span>
+    <div class="line"></div>
   </h1>
   <h3 class="sub-header">A timeline of events for the big day - click each event to find out more...</h3>
 
   <mgl-timeline>
     <mgl-timeline-entry>
-
       <mgl-timeline-entry-header>
         <div class="timeline-item-container">
           <div class="timeline-item-image day-start-image"></div>
@@ -18,7 +19,7 @@
 
         The brides side will depart a little sooner than this from Nottingham to ensure that the template is reached by 9.30am.
       </mgl-timeline-entry-content>
-      <mgl-timeline-entry-side></mgl-timeline-entry-side>
+      <mgl-timeline-entry-dot  class="dot"></mgl-timeline-entry-dot>
     </mgl-timeline-entry>
 
     <mgl-timeline-entry>
@@ -33,7 +34,7 @@
 
          As soon as this is done, the Bride and Groom will make their band baja enterance and the traditional hindu ceremony will begin.
       </mgl-timeline-entry-content>
-      <mgl-timeline-entry-side></mgl-timeline-entry-side>
+      <mgl-timeline-entry-dot [size]="50" class="dot"></mgl-timeline-entry-dot>
     </mgl-timeline-entry>
 
     <mgl-timeline-entry>
@@ -45,7 +46,7 @@
       </mgl-timeline-entry-header>
       <mgl-timeline-entry-content>The temple hall will host the traditional hindu ceremony, here a traditional punjabi breakfast
         will be provided alongside tea while everything takes place.</mgl-timeline-entry-content>
-      <mgl-timeline-entry-side></mgl-timeline-entry-side>
+      <mgl-timeline-entry-dot [size]="50" class="dot"></mgl-timeline-entry-dot>
     </mgl-timeline-entry>
 
     <mgl-timeline-entry>
@@ -57,7 +58,7 @@
       </mgl-timeline-entry-header>
       <mgl-timeline-entry-content>Once the ceremony has completed, both sides will make their way to The Manor Grove for the
         wedding reception, where welcome drinks and canapes will be ready to greet guests and the party begins!</mgl-timeline-entry-content>
-      <mgl-timeline-entry-side></mgl-timeline-entry-side>
+      <mgl-timeline-entry-dot [size]="50" class="dot"></mgl-timeline-entry-dot>
     </mgl-timeline-entry>
 
     <mgl-timeline-entry>
@@ -69,7 +70,32 @@
       </mgl-timeline-entry-header>
       <mgl-timeline-entry-content>Around this time the doors will open and the main area will be unveiled for guests to enjoy
         an afternoon of celebrating the wedding of Rohit and Raji.</mgl-timeline-entry-content>
-      <mgl-timeline-entry-side></mgl-timeline-entry-side>
+      <mgl-timeline-entry-dot [size]="50" class="dot"></mgl-timeline-entry-dot>
+    </mgl-timeline-entry>
+
+    <mgl-timeline-entry>
+      <mgl-timeline-entry-header>
+        <div class="timeline-item-container">
+          <div class="timeline-item-image party-image"></div>
+          <p class="timeline-item-title">3.00PM: Bride & Groom Entrance</p>
+        </div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>We make our entrance, led out by a dhol players and followed out by family and friends
+        where we will cut the wedding cake and expect everyone on the dancefloor to tear it up!</mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [size]="50" class="dot"></mgl-timeline-entry-dot>
+    </mgl-timeline-entry>
+
+    <mgl-timeline-entry>
+      <mgl-timeline-entry-header>
+        <div class="timeline-item-container">
+          <div class="timeline-item-image party-image"></div>
+          <p class="timeline-item-title">8.00PM: Bride is seen off</p>
+        </div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>As per punjabi tradition, Rajis family will bid farewell to Raji as she joins Rohit's family
+        and enters the family home for an evening of traditional fun and games.</mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [size]="50" class="dot"></mgl-timeline-entry-dot>
     </mgl-timeline-entry>
   </mgl-timeline>
+
 </div>
