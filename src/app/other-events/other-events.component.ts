@@ -6,8 +6,4 @@ import {Component} from '@angular/core';
   styleUrls: ['./other-events.component.scss']
 })
 export class OtherEventsComponent {
-
-  constructor() {
-  }
-
 }

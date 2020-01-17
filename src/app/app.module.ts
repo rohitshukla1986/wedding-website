@@ -17,6 +17,7 @@ import {NgxGalleryModule} from 'ngx-gallery';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MglTimelineModule} from 'angular-mgl-timeline';
 import {ScrollSpyDirective} from './app-scroll-spy.directive';
+import {EventCardComponent} from './other-events/event-card/event-card.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {ScrollSpyDirective} from './app-scroll-spy.directive';
     TravelComponent,
     PhotoGalleryComponent,
     FaqComponent,
-    ScrollSpyDirective
+    ScrollSpyDirective,
+    EventCardComponent
   ],
   imports: [
     BrowserModule,

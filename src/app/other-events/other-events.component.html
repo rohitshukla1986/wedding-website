@@ -6,40 +6,83 @@
   </h1>
   <div class="header">
 
-    <div class="container">
+    <div class="info-container">
       <h1>Both Sides</h1>
-      <h2>Kurami Ceremony</h2>
-      <h2>Chunni Ceremony</h2>
-      <h2>Engagement Celebration</h2>
-      <h2>Civil Ceremony</h2>
-      <h2>Lady Sangeet</h2>
-      <h2>Haldi Ceremony</h2>
+      <app-event-card
+        [eventName]="'Kurami Ceremony'"
+        [when]="'To be planned'"
+        [where]="'To be planned'"
+        [what]="'To be planned'"
+      ></app-event-card>
+      <app-event-card
+        [eventName]="'Chunni Ceremony'"
+        [when]="'To be planned'"
+        [where]="'To be planned'"
+        [what]="'To be planned'"
+      ></app-event-card>
+      <app-event-card
+        [eventName]="'Engagement Celebration'"
+        [when]="'To be planned'"
+        [where]="'To be planned'"
+        [what]="'To be planned'"
+      ></app-event-card>
+      <app-event-card
+        [eventName]="'Civil Ceremony'"
+        [when]="'To be planned'"
+        [where]="'To be planned'"
+        [what]="'To be planned'"
+      ></app-event-card>
+      <app-event-card
+        [eventName]="'Lady Sangeet'"
+        [when]="'To be planned'"
+        [where]="'To be planned'"
+        [what]="'To be planned'"
+      ></app-event-card>
+      <app-event-card
+        [eventName]="'Haldi Ceremony'"
+        [when]="'To be planned'"
+        [where]="'To be planned'"
+        [what]="'To be planned'"
+      ></app-event-card>
     </div>
 
     <div class="info-container">
       <h1>Grooms Side Only</h1>
-      <h2>Pre Wedding Party</h2>
-
-      <div class="info-item-container">
-        <p class="bold">When: </p>
-        <p>September 19th 2020</p>
-      </div>
-
-      <div class="info-item-container">
-        <p class="bold">Where: </p>
-        <p>Sports Connection, Warwick Suite, Coventry</p>
-      </div>
-
-      <div class="info-item-container">
-        <p >What: </p>
-        <p>A wedding pre-party - a chance for the grooms side to mix it up.</p>
-      </div>
-
+      <app-event-card
+        [eventName]="'Pre-Wedding Party'"
+        [when]="'September 19th 2020'"
+        [where]="'Sports Connection, Warwick Suite, Coventry'"
+        [what]="'A wedding pre-party - a chance for the grooms side to mix it up.'"
+      ></app-event-card>
+      <app-event-card
+        [eventName]="'Stag Abroad'"
+        [when]="'July 8th - 11th 2020'"
+        [where]="'To be revealed'"
+        [what]="'To be revealed to groom'"
+      ></app-event-card>
+      <app-event-card
+        [eventName]="'Stag UK'"
+        [when]="'To be planned'"
+        [where]="'To be planned'"
+        [what]="'A chance for the people who couldnt make it abroad to take part'"
+      ></app-event-card>
     </div>
 
-    <div class="container">
+    <div class="info-container">
      <h1>Brides Side Only</h1>
-      <h2>Mehndi Ceremony</h2>
+      <app-event-card
+        [eventName]="'Mehndi Ceremony'"
+        [when]="'To be planned'"
+        [where]="'To be planned'"
+        [what]="'To be planned'"
+      ></app-event-card>
+      <app-event-card
+        [eventName]="'Hen Party'"
+        [when]="'To be planned'"
+        [where]="'To be planned'"
+        [what]="'To be planned'"
+      ></app-event-card>
     </div>
+
   </div>
 </div>

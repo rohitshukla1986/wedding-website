@@ -1,16 +1,26 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-faq',
-  templateUrl: './faq.component.html',
-  styleUrls: ['./faq.component.scss']
+  selector: 'app-event-card',
+  templateUrl: './event-card.component.html',
+  styleUrls: ['./event-card.component.scss']
 })
-export class FaqComponent implements OnInit {
-  constructor() {
-  }
+export class EventCardComponent implements OnInit {
 
-  ngOnInit() {
-    const acc = document.getElementsByClassName('accordion');
+  @Input()
+  where = '';
+
+  @Input()
+  when = '';
+
+  @Input()
+  what = '';
+
+  @Input()
+  eventName = '';
+
+  ngOnInit(): void {
+    const acc = document.getElementsByClassName('infoAccordion');
     let i;
 
     for (i = 0; i < acc.length; i++) {
@@ -29,4 +39,5 @@ export class FaqComponent implements OnInit {
       });
     }
   }
+
 }
