@@ -48,3 +48,18 @@
   align-items: center;
   padding-top: 30px;
 }
+
+.info-item-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.bold {
+  font-weight: bold;
+}

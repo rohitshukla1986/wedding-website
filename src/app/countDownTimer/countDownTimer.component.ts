@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {interval, timer} from 'rxjs';
+import {timer} from 'rxjs';
 
 @Component({
   selector: 'app-count-down-timer',
@@ -8,7 +8,7 @@ import {interval, timer} from 'rxjs';
 })
 export class CountDownTimerComponent implements OnInit {
 
-  private countDownDate: number;
+  private countDownDate: Date;
   public daysLeft: number;
   public hoursLeft: number;
   public minutesLeft: number;
@@ -18,7 +18,7 @@ export class CountDownTimerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.countDownDate = new Date(2020, 9, 26, 0, 0, 0).getTime();
+    this.countDownDate = new Date(2020, 8, 26, 0, 0, 0);
     timer(0, 1000).subscribe(
       () => {
         this.recalculateDaysLeft();
@@ -26,7 +26,7 @@ export class CountDownTimerComponent implements OnInit {
   }
 
   recalculateDaysLeft(): void {
-    const distance = this.countDownDate - new Date().getTime();
+    const distance = this.countDownDate.getTime() - new Date().getTime();
 
     this.daysLeft = Math.floor(distance / (1000 * 60 * 60 * 24));
     this.hoursLeft = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
