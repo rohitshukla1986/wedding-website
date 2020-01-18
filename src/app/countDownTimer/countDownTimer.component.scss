@@ -25,7 +25,7 @@
 .interval-container {
   height:200px;
   width:200px;
-  background-color: rgba(265, 265, 265, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,6 +34,8 @@
   margin-left: 15px;
   margin-bottom: 5px;
   position: relative;
+  border: 4px solid black;
+  border-radius: 200px;
 
   @media screen and (max-device-width: 480px) {
     height:140px;
@@ -49,16 +51,6 @@
     height:170px;
     width:170px;
   }
-}
-
-.gold-border {
-  border: 4px solid black;
-  border-radius: 200px;
-}
-
-.seconds-counter {
-  border: 4px solid black;
-  border-radius: 200px;
 }
 
 .animate {
@@ -82,14 +74,14 @@
 }
 
 .interval-value {
-  color: black;
+  color: white;
   font-family: $secondary-font;
   font-size: 2.5rem;
   text-transform: uppercase;
 }
 
 .interval-unit {
-  color: black;
+  color: white;
   font-size:2rem;
   font-family: $primary-font;
 }
@@ -104,14 +96,3 @@
   justify-content: center;
   padding-right: 50px;
 }
-
-/*@keyframes spin {*/
-/*from { transform: rotate(0deg); }*/
-/*to { transform: rotate(360deg); }*/
-/*}*/
-
-/*@keyframes moveLeftToRight {*/
-/*0%   { left: -100px; position: absolute; }*/
-/*99%   { left: 87%; position: absolute; }*/
-/*100% { left: 88%}*/
-/*}*/
