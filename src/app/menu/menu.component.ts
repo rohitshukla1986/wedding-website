@@ -20,6 +20,7 @@ export class MenuComponent implements OnInit {
   }
 
   onScroll() {
+    console.log(this.currentSection)
     this.topOfPage = !(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80);
   }
 }

@@ -60,6 +60,7 @@
 .info-container {
   display: flex;
   flex-direction: column;
+  z-index: 5000;
 }
 
 .info-item-text-container {

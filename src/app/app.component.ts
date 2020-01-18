@@ -33,6 +33,8 @@ export class AppComponent {
 
     if (sectionId !== undefined) {
       this.changeMobileNavBarTitleOnScroll(this.currentSection);
+    } else {
+      this.changeMobileNavBarTitleOnScroll('rohitWedsRaji');
     }
   }
 }
