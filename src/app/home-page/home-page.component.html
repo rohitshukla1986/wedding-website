@@ -2,6 +2,10 @@
   <h1 class="mobile-nav-bar-header">
     {{mobileNavBarTitle}}
   </h1>
+  <div *ngIf="mobileNavBarTitle !== 'Rohit Weds Raji'"
+       class="mobile-nav-bar-home-icon"
+       (click)="scrollToTop()"
+  ></div>
 </div>
 <header class="header">
   <app-menu [currentSection]="currentSection"></app-menu>

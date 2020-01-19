@@ -1,66 +1,10 @@
 @import '../../common-styles';
 
-.heading-primary {
-  text-align: center;
-  color: black;
-  width: 90%;
-  position: absolute;
-  z-index: 500;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-
-  @media screen and (max-device-width: 480px) {
-    display: none;
-  }
-}
-
-.line {
-  height: 0;
-  width: 20%;
-  border: 2px solid black;
-}
-
-.heading-primary-main {
-  display: block;
-  font-size: 10vw;
-  font-weight: 400;
-  letter-spacing: 1vw;
-  animation: moveInLeft 1s ease-out;
-  font-family: $primary-font;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  height: 200vh;
-  background-color: $pink;
-  clip-path: polygon(0 0, 100% 26%, 100% 100%, 0% 100%);
-  padding-top: 20%;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 30px;
-}
-
 .info-item-container {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
   align-items: center;
   margin-bottom: 10px;
-}
-
-.info-container {
-  display: flex;
-  flex-direction: column;
-  z-index: 5000;
 }
 
 .info-item-text-container {
@@ -68,21 +12,29 @@
   flex-direction: row;
 }
 
+.text {
+  color: black;
+}
+
 .bold {
   font-weight: bold;
+  color: black;
 }
 
 .infoAccordion {
-  background-color: $pink;
-  color: #444;
+  background-color: rgba(265, 265, 265, 0.5);
+  color: black;
   cursor: pointer;
-  padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1rem;
   transition: 0.4s;
+  display: flex;
+  align-items: center;
+  place-content: space-between;
+  padding: 0 18px;
 }
 
 .active, .infoAccordion:hover {
@@ -98,15 +50,15 @@
 }
 
 .infoAccordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: white;
+  content: '\02C5'; /* Unicode character for "down arrow" sign */
+  font-size: 2rem;
+  color: black;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\02C4"; /* Unicode character for "up arrow" sign */
 }
 
 .panelExpand {

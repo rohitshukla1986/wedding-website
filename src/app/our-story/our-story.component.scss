@@ -53,7 +53,7 @@
   flex-direction: row;
   justify-content: center;
 
-  @media screen and (max-device-width: 480px) {
+  @media screen and (max-device-width: 1024px) {
     width: 90vw;
     font-size: 1.5rem;
     flex-direction: column;
@@ -68,7 +68,7 @@
 .book-container {
   display: flex;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   justify-content: flex-end;
 }
 
@@ -151,7 +151,7 @@
   background-color: rgba(255, 255, 255, 0.8);
   height: fit-content;
 
-  @media screen and (max-device-width: 480px) {
+  @media screen and (max-device-width: 1024px) {
     font-size: 2rem;
   }
 }
@@ -162,7 +162,7 @@
   align-items: center;
   padding-top: 30px;
 
-  @media screen and (max-device-width: 480px) {
+  @media screen and (max-device-width: 1024px) {
     flex-direction: column;
   }
 }
@@ -212,7 +212,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @media screen and (max-device-width: 480px) {
+  @media screen and (max-device-width: 1024px) {
     height:100px;
     width:100px;
     background-image: url("../../assets/img/point2.png");
@@ -222,7 +222,7 @@
 .move {
   -webkit-animation: pointerright 0.6s infinite alternate ease-in-out;
 
-  @media screen and (max-device-width: 480px) {
+  @media screen and (max-device-width: 1024px) {
     -webkit-animation: pointerdown 0.6s infinite alternate ease-in-out;
   }
 }
@@ -246,4 +246,36 @@
 
 .story-pic-2 {
   background-image: url('../../assets/img/storypic2.png');
+}
+
+.story-pic-3 {
+  background-image: url('../../assets/img/storypic3.png');
+}
+
+.story-pic-4 {
+  background-image: url('../../assets/img/storypic4.png');
+}
+
+.story-pic-5 {
+  background-image: url('../../assets/img/storypic7.png');
+}
+
+.story-pic-6 {
+  background-image: url('../../assets/img/storypic6.png');
+}
+
+.story-pic-7 {
+  background-image: url('../../assets/img/storypic8.png');
+}
+
+.story-pic-8 {
+  background-image: url('../../assets/img/storypic9.png');
+}
+
+.story-pic-9 {
+  background-image: url('../../assets/img/storypic10.png');
+}
+
+.story-pic-10 {
+  background-image: url('../../assets/img/storypic5.png');
 }
