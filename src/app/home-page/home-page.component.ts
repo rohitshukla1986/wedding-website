@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -8,10 +8,18 @@ import {Component, Input, OnInit} from '@angular/core';
 export class HomePageComponent implements OnInit {
 
   @Input()
-  public mobileNavBarTitle: string;
+  set mobileNavBarTitle(value: string) {
+    this._mobileNavBarTitle = value;
+    this.animate = !this.animate;
+  }
 
   @Input()
   public currentSection: string;
+
+  public animate = false;
+  public _mobileNavBarTitle: string;
+
+  @ViewChild('mobileNavBarHeader') mobileNavBarHeader: ElementRef;
 
   myStyle: object = {};
   myParams: object = {};

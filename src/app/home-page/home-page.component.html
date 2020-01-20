@@ -1,8 +1,8 @@
 <div class="mobile-nav-bar" [ngClass]="{ 'whiteBackground' : currentSection === 'otherEvents' }">
-  <h1 class="mobile-nav-bar-header">
-    {{mobileNavBarTitle}}
+  <h1 [ngClass]="{'animateMobileHeader' : _mobileNavBarTitle !== 'Rohit Weds Raji'}">
+    {{_mobileNavBarTitle}}
   </h1>
-  <div *ngIf="mobileNavBarTitle !== 'Rohit Weds Raji'"
+  <div *ngIf="_mobileNavBarTitle !== 'Rohit Weds Raji'"
        class="mobile-nav-bar-home-icon"
        (click)="scrollToTop()"
   ></div>
