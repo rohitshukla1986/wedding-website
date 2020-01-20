@@ -36,7 +36,7 @@
   @media screen and (max-device-width: 480px) {
     height:140px;
     width:140px;
-    border: 4px solid black;
+    background-color: rgba(265, 265, 265, 0.8);
   }
 
   @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -75,12 +75,20 @@
   font-family: $secondary-font;
   font-size: 2.5rem;
   text-transform: uppercase;
+
+  @media screen and (max-device-width: 480px) {
+    color: black;
+  }
 }
 
 .interval-unit {
   color: white;
   font-size:2rem;
   font-family: $primary-font;
+
+  @media screen and (max-device-width: 480px) {
+    color: black;
+  }
 }
 
 .count-down-text {

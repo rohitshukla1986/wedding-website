@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -19,11 +19,9 @@ export class HomePageComponent implements OnInit {
   public animate = false;
   public _mobileNavBarTitle: string;
 
-  @ViewChild('mobileNavBarHeader') mobileNavBarHeader: ElementRef;
-
   myStyle: object = {};
   myParams: object = {};
-  width = 300;
+  width = 100;
   height = 100;
 
   constructor() {
@@ -31,7 +29,7 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.myStyle = {
-      'position': 'fixed',
+      'position': 'absolute',
       'width': '100%',
       'height': '100%',
       'z-index': -1,
@@ -44,7 +42,7 @@ export class HomePageComponent implements OnInit {
     this.myParams = {
       particles: {
         number: {
-          value: 0,
+          value: 300,
           density: {
             enable: true,
             value_area: 868.0624057955
@@ -54,7 +52,7 @@ export class HomePageComponent implements OnInit {
           value: '#FFFFFF'
         },
         size: {
-          value: 20,
+          value: 3,
           random: true,
         },
         line_linked: {
@@ -62,11 +60,11 @@ export class HomePageComponent implements OnInit {
         },
         move: {
           enable: true,
-          speed: 1,
-          direction: 'none',
-          random: false,
+          speed: 5,
+          direction: 'top',
+          random: true,
           straight: false,
-          bounce: true,
+          bounce: false,
         }
       },
       interactivity: {

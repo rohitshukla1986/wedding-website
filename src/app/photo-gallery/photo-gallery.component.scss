@@ -4,11 +4,12 @@
   text-align: center;
   color: black;
   width: 100%;
-  z-index: 500;
   display: flex;
+  z-index: 500;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  height: 25%;
 
   @media screen and (max-device-width: 480px) {
     display: none;
@@ -18,7 +19,7 @@
 .line {
   height: 0;
   width: 10%;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 .heading-primary-main {
@@ -28,13 +29,14 @@
   letter-spacing: 1vw;
   animation: moveInLeft 1s ease-out;
   font-family: $primary-font;
+  color: white;
 }
 
 .main {
   width: 100%;
   background-size: cover;
-  background-position: -15px;
-  height: 100vh;
+  height: inherit;
+  z-index: inherit;
 }
 
 .main-container {
@@ -43,4 +45,13 @@
   align-items: center;
   padding-top: 30px;
   height: 140vh;
+  background-color: #344148;
+}
+
+.image-container {
+  height: 75%;
+
+  @media screen and (max-device-width: 480px) {
+    height: 100%;
+  }
 }

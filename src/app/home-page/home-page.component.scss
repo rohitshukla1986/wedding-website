@@ -21,6 +21,7 @@
 
   @media screen and (max-device-width: 480px) {
     background-position: bottom;
+    background-image: url('../../assets/img/bg21.jpg');
   }
 }
 
@@ -102,7 +103,7 @@
   padding-left: 18px;
   align-items: center;
   padding-top: 10px;
-  background-color: black;
+  background-color: $pink;
   position: fixed;
   z-index: 2000;
   width: 100%;
@@ -113,7 +114,6 @@
   @media screen and (max-device-width: 1024px) {
     color: black;
     display: flex;
-    background-color: $pink;
   }
 }
 
@@ -129,6 +129,11 @@
   height: 100%;
   width:100%;
   background-color: rgba(0,0,0,0.6);
+
+  @media screen and (max-device-width: 480px) {
+    background-position: bottom;
+    background-color: transparent;
+  }
 }
 
 .mobile-nav-bar-home-icon {
@@ -157,7 +162,7 @@
   @media screen and (max-device-width: 480px) {
     padding-top: 18.9%;
     height: 100%;
-    background-color: rgba(265,265,265,0.4);
+    background-color: transparent;
   }
 }
 
@@ -171,7 +176,6 @@
 
   @media screen and (max-device-width: 480px) {
     width: 30%;
-    background-position: center;
   }
 }
 
@@ -325,7 +329,7 @@
 }
 
 .animateMobileHeader {
-  animation: rubberBand 2s ease-out;
+  animation: rubberBand 1s;
 }
 
 .rubberBand {

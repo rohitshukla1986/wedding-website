@@ -14,11 +14,15 @@
 
 .text {
   color: black;
+  text-align: left;
+  width: 80%;
 }
 
 .bold {
   font-weight: bold;
   color: black;
+  padding-right: 5px;
+  width: 20%;
 }
 
 .infoAccordion {

@@ -52,7 +52,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  @media screen and (max-device-width: 768px) {
+  @media screen and (max-device-width: 480px) {
     flex-direction: column;
   }
 }
@@ -106,7 +106,7 @@
   justify-content: space-between;
   border: 2px solid black;
   border-radius: 25px;
-  padding: 30px;
+  padding: 20px;
 
   @media screen and (max-device-width: 480px) {
     flex-direction: column;
@@ -121,7 +121,7 @@
   justify-content: space-between;
   border: 2px solid black;
   border-radius: 25px;
-  padding: 30px;
+  padding: 20px;
 
   @media screen and (max-device-width: 480px) {
     flex-direction: column;
