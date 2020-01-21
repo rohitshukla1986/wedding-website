@@ -62,8 +62,8 @@
   border-radius: 200px;
 
   @media screen and (max-device-width: 480px) {
-    height:140px;
-    width:140px;
+    height:90px;
+    width:90px;
     background-color: rgba(265, 265, 265, 0.8);
   }
 
@@ -116,6 +116,7 @@
 
   @media screen and (max-device-width: 480px) {
     color: black;
+    font-size:1.5rem;
   }
 }
 
@@ -126,6 +127,7 @@
 
   @media screen and (max-device-width: 480px) {
     color: black;
+    font-size:1.5rem;
   }
 }
 
