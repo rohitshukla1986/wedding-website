@@ -19,7 +19,7 @@
 .line {
   height: 0;
   width: 10%;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 .heading-primary-main {
@@ -29,7 +29,7 @@
   letter-spacing: 1vw;
   animation: moveInLeft 1s ease-out;
   font-family: $primary-font;
-  color: white;
+  color: black;
 }
 
 .main {
@@ -43,9 +43,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
   height: 140vh;
-  background-color: #344148;
+  background-color: $pink;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px dashed black;
 }
 
 .image-container {

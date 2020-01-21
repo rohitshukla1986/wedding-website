@@ -8,6 +8,7 @@
   width: 100%;
   background-color: $pink;
   background-size: auto;
+  border: 4px dashed black;
 }
 
 .heading-primary {
@@ -129,7 +130,6 @@
   padding-top: 40px;
   font-family: Arial, serif;
   color: goldenrod;
-  text-shadow: 0px 2px 0px rgba(255,255,255,.3), 0px -2px 0px rgba(0,0,0,.7);
 }
 
 .story-row {

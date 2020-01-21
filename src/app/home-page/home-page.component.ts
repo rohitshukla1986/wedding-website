@@ -10,13 +10,11 @@ export class HomePageComponent implements OnInit {
   @Input()
   set mobileNavBarTitle(value: string) {
     this._mobileNavBarTitle = value;
-    this.animate = !this.animate;
   }
 
   @Input()
   public currentSection: string;
 
-  public animate = false;
   public _mobileNavBarTitle: string;
 
   myStyle: object = {};
