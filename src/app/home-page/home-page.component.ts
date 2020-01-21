@@ -52,7 +52,7 @@ export class HomePageComponent implements OnInit {
           value: '#FFFFFF'
         },
         size: {
-          value: 3,
+          value: 7,
           random: true,
         },
         line_linked: {
