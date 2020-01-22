@@ -39,7 +39,6 @@
   letter-spacing: 1vw;
   animation: moveInLeft 1s ease-out;
   font-family: $primary-font;
-  width: 100%;
 }
 
 .header {
@@ -113,23 +112,23 @@
 }
 
 .back{
-  background-image: url('../../assets/img/page.jpg');
   background-size: cover;
   border-right: 2px solid black;
-  transform:rotateY(180deg)
+  transform:rotateY(180deg);
+  background-color: white;
 }
 
 .inside{
   backface-visibility: visible;
   color:#000;
   background-size: cover;
-  background: url('../../assets/img/page.jpg') bottom;
+  background-color: white;
 }
 
 .front-cover-title {
   padding-top: 40px;
-  font-family: Arial, serif;
-  color: goldenrod;
+  font-family: $primary-font;
+  color: black;
 }
 
 .story-row {
@@ -145,15 +144,14 @@
 
   @media screen and (max-device-width: 480px) {
     font-size: 1rem;
-    padding: 10px;
+    padding: 20px;
   }
 }
 
 .click-here {
-  font-family: 'Indie Flower', cursive;
-  font-size: 3rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 2rem;
   height: fit-content;
+  padding: 10px;
 
   @media screen and (max-device-width: 1024px) {
     font-size: 2rem;
@@ -286,18 +284,22 @@
 
 .story-pic-2 {
   background-image: url('../../assets/img/storypic2.png');
+  margin-bottom: 15px;
 }
 
 .story-pic-3 {
   background-image: url('../../assets/img/storypic3.png');
+  background-position: center;
 }
 
 .story-pic-4 {
   background-image: url('../../assets/img/storypic4.png');
+  background-position: center;
 }
 
 .story-pic-5 {
   background-image: url('../../assets/img/storypic7.png');
+  background-position: center;
 }
 
 .story-pic-6 {
@@ -306,16 +308,21 @@
 
 .story-pic-7 {
   background-image: url('../../assets/img/storypic8.png');
+  background-position: center;
 }
 
 .story-pic-8 {
   background-image: url('../../assets/img/storypic9.png');
+  background-position: center;
 }
 
 .story-pic-9 {
   background-image: url('../../assets/img/storypic10.png');
+  background-position: center;
 }
 
 .story-pic-10 {
   background-image: url('../../assets/img/storypic5.png');
+  background-position: center;
 }
+
