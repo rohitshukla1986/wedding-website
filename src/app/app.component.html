@@ -7,8 +7,11 @@
   </head>
     <app-home-page
       [currentSection]="currentSection"
-      [mobileNavBarTitle]="mobileNavBarTitle"></app-home-page>
+      [mobileNavBarTitle]="mobileNavBarTitle">
+
+    </app-home-page>
   <main>
+    <app-welcome-section></app-welcome-section>
     <div scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)">
       <div id="ourStory">
         <app-our-story></app-our-story>

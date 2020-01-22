@@ -167,27 +167,6 @@
   }
 }
 
-.raji-avatar,
-.ro-avatar {
-  width: 15%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-
-  @media screen and (max-device-width: 480px) {
-    width: 30%;
-  }
-}
-
-.ro-avatar {
-  background-image: url('../../assets/img/frontpagero.png');
-}
-
-.raji-avatar {
-  background-image: url('../../assets/img/frontpageraji.png');
-}
-
 .rsvp-button-container {
   height: 100%;
   display: flex;
