@@ -13,9 +13,6 @@
   <main>
     <app-welcome-section></app-welcome-section>
     <div scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)">
-      <div id="ourStory">
-        <app-our-story></app-our-story>
-      </div>
       <div id="weddingDay">
         <app-wedding-day></app-wedding-day>
       </div>
@@ -24,6 +21,9 @@
       </div>
       <div id="travel">
         <app-travel></app-travel>
+      </div>
+      <div id="ourStory">
+        <app-our-story></app-our-story>
       </div>
       <div id="photoGallery">
         <app-photo-gallery></app-photo-gallery>

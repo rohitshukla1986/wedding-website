@@ -1,17 +1,21 @@
-<div class="info-item-container">
-  <button class="info-item-title infoAccordion">{{eventName}}</button>
-  <div class="panel">
-    <div class="info-item-text-container">
-      <p class="bold">When: </p>
-      <p class="text">{{when}}</p>
+<div class="card" (click)="toggleExpand()">
+  <div class="card-info">
+    <div class="date-container" [ngClass]="{'greyBackground': tbc, 'colourBackground': !tbc }">
+      <div *ngIf="!tbc" class="day">{{day}}</div>
+      <div *ngIf="!tbc" class="month">{{month}}</div>
+      <div *ngIf="tbc" class="tbc">TBC</div>
     </div>
-    <div class="info-item-text-container">
-      <p class="bold">Where: </p>
-      <p class="text">{{where}}</p>
-    </div>
-    <div class="info-item-text-container">
-      <p class="bold">What: </p>
-      <p class="text">{{what}}</p>
+    <div class="event-container">
+      <div class="event-name">{{eventName}}</div>
+      <div class="location-container">
+        <div class="location-icon"></div>
+        <div class="location-name">{{where}}</div>
+      </div>
     </div>
   </div>
+  <div class="event-description-container" *ngIf="expand" [@enterAnimation]>
+    <div class="event-description">{{what}}</div>
+  </div>
 </div>
+
+

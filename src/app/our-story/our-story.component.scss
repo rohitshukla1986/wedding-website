@@ -8,7 +8,9 @@
   width: 100%;
   background-color: $pink;
   background-size: auto;
-  border: 4px dashed black;
+  border-top: 4px dashed black;
+  border-right: 4px dashed black;
+  border-left: 4px dashed black;
 }
 
 .heading-primary {
@@ -53,7 +55,7 @@
   flex-direction: row;
   justify-content: center;
 
-  @media screen and (max-device-width: 480px) {
+  @media screen and (max-device-width: 1024px) {
     width: 90vw;
     font-size: 1.5rem;
     flex-direction: column;

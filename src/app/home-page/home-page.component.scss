@@ -78,18 +78,6 @@
   color: white;
 }
 
-.sub-header {
-  display: flex;
-  align-items: center;
-  height: 25%;
-  color: white;
-  font: $secondary-font;
-
-  @media screen and (max-device-width: 480px) {
-    display: none;
-  }
-}
-
 .line {
   width: 40%;
   border: 2px double white;

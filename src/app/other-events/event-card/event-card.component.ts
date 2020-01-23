@@ -1,17 +1,29 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {animate, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-event-card',
   templateUrl: './event-card.component.html',
-  styleUrls: ['./event-card.component.scss']
+  styleUrls: ['./event-card.component.scss'],
+  animations: [
+    trigger(
+      'enterAnimation', [
+        transition(':enter', [
+          style({transform: 'translateY(-10%)', opacity: 0}),
+          animate('200ms', style({transform: 'translateY(0)', opacity: 1}))
+        ]),
+        transition(':leave', [
+          style({transform: 'translateY(0)', opacity: 1}),
+          animate('200ms', style({transform: 'translateY(-20%)', opacity: 0}))
+        ])
+      ]
+    )
+  ],
 })
-export class EventCardComponent implements OnInit {
+export class EventCardComponent {
 
   @Input()
   where = '';
-
-  @Input()
-  when = '';
 
   @Input()
   what = '';
@@ -19,25 +31,18 @@ export class EventCardComponent implements OnInit {
   @Input()
   eventName = '';
 
-  ngOnInit(): void {
-    const acc = document.getElementsByClassName('infoAccordion');
-    let i;
+  @Input()
+  day = '';
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener('click', function() {
-        this.classList.toggle('active');
-        const panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-          panel.style.paddingTop = '0';
-          panel.style.paddingLeft = '35px';
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + 'px';
-          panel.style.paddingTop = '9px';
-          panel.style.paddingLeft = '35px';
-        }
-      });
-    }
+  @Input()
+  month = '';
+
+  @Input()
+  tbc = false;
+
+  public expand = false;
+
+  toggleExpand() {
+    this.expand = !this.expand;
   }
-
 }

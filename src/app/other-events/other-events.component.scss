@@ -2,7 +2,7 @@
 
 .heading-primary {
   text-align: center;
-  color: white;
+  color: black;
   width: 100%;
   z-index: 500;
   display: flex;
@@ -19,11 +19,11 @@
 .line {
   height: 0;
   width: 20%;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 .heading {
-  color: white;
+  color: black;
 
   @media screen and (max-device-width: 480px) {
     color: black;
@@ -37,7 +37,7 @@
   letter-spacing: 1vw;
   animation: moveInLeft 1s ease-out;
   font-family: $primary-font;
-  color: white;
+  color: black;
 }
 
 .header {
@@ -46,7 +46,6 @@
   text-align: center;
   width: 100%;
   height: fit-content;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 700;
 
   @media screen and (max-device-width: 480px) {
@@ -58,15 +57,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../../assets/img/bg20.jpg');
   background-size: cover;
   height: fit-content;
+  @media screen and (max-device-width: 480px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .info-item-container {
   display: flex;
   flex-direction: column;
-  border: 2px solid white;
+  border: 2px solid black;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -74,6 +76,9 @@
 .info-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: -webkit-center;
+  padding-bottom: 10px;
 }
 
 .info-item-text-container {

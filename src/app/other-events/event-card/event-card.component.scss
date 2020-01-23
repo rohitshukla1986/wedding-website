@@ -1,98 +1,160 @@
 @import '../../common-styles';
 
-.info-item-container {
+.card {
+  height: fit-content;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border: 1px solid black;
   margin-bottom: 10px;
+
+  @media screen and (max-device-width: 480px) {
+    width: 100%;
+  }
 }
 
-.info-item-text-container {
+.card-info {
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.text {
-  color: black;
-  text-align: left;
-  width: 80%;
-
-  @media screen and (max-device-width: 480px) {
-    color: white;
-  }
-}
-
-.bold {
-  font-weight: bold;
-  color: black;
-  padding-right: 5px;
-  width: 20%;
-
-  @media screen and (max-device-width: 480px) {
-    color: white;
-    text-align: start;
-  }
-}
-
-.infoAccordion {
-  background-color: rgba(265, 265, 265, 0.5);
-  color: black;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 1rem;
-  transition: 0.4s;
+.date-container {
+  width: 15%;
   display: flex;
-  align-items: center;
-  place-content: space-between;
-  padding: 0 18px;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
 
   @media screen and (max-device-width: 480px) {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    width: 20%;
   }
 }
 
-.active, .infoAccordion:hover {
-  background-color: white;
-
-  @media screen and (max-device-width: 480px) {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-  }
-}
-
-.panel {
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.day {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  height: 50%;
   width: 100%;
 
   @media screen and (max-device-width: 480px) {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    font-size: 2rem;
   }
 }
 
-.infoAccordion:after {
-  content: '\25BC'; /* Unicode character for "down arrow" sign */
+.month {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  height: 50%;
+  width: 100%;
+
+  @media screen and (max-device-width: 480px) {
+    font-size: 1rem;
+  }
+}
+
+.colourBackground {
+  background-color: cornflowerblue;
+}
+
+.greyBackground {
+  background-color: $dark-grey;
+}
+
+.tbc {
+  font-size: 3.5rem;
+  color: white;
+
+  @media screen and (max-device-width: 480px) {
+    font-size: 1.5rem;
+  }
+}
+
+.event-container {
+  width: 85%;
+  max-height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: start;
+  justify-content: center;
+
+  @media screen and (max-device-width: 480px) {
+    width: 80%;
+  }
+}
+
+.event-name {
   font-size: 2rem;
   color: black;
-  float: right;
-  margin-left: 5px;
+  font-weight: bold;
 
   @media screen and (max-device-width: 480px) {
-    color: white;
+    font-size: 1.5rem;
   }
 }
 
-.active:after {
-  content: "\25B2"; /* Unicode character for "up arrow" sign */
+.location-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
 }
 
-.panelExpand {
-  max-height: fit-content;
+.location-icon {
+  width: 35px;
+  height: 35px;
+  background-size: contain !important;
+  background: url('../../../assets/img/placeholder.png') no-repeat;
+  margin-right: 5px;
+
+  @media screen and (max-device-width: 480px) {
+    width: 20px;
+    height: 20px;  }
 }
+
+.location-name {
+  font-size: 1.5rem;
+  color: black;
+
+  @media screen and (max-device-width: 480px) {
+    font-size: 1rem;
+  }
+}
+
+.location-description {
+  font-size: 1rem;
+  color: black;
+}
+
+.event-description-container{
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.event-description {
+  text-align: start;
+}
+
+.transition{
+  -webkit-transition: opacity 1000ms ease-in-out,margin-left 500ms ease-in-out;
+  -moz-transition: opacity 1000ms ease-in-out,margin-left 500ms ease-in-out;
+  -o-transition: opacity 1000ms ease-in-out,margin-left 500ms ease-in-out;
+  transition: opacity 1000ms ease-in-out,margin-left 500ms ease-in-out;
+  margin-left: 1500px;
+  width: 200px;
+  opacity: 0;
+}
+
+.transition{
+  opacity: 100;
+  margin-left: 0;
+}
+
+
+
