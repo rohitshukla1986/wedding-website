@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {animate, style, transition, trigger} from "@angular/animations";
+import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-event-card',
@@ -17,7 +17,7 @@ import {animate, style, transition, trigger} from "@angular/animations";
           animate('200ms', style({transform: 'translateY(-20%)', opacity: 0}))
         ])
       ]
-    )
+    ),
   ],
 })
 export class EventCardComponent {

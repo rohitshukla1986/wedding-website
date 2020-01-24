@@ -5,11 +5,16 @@
       <div *ngIf="!tbc" class="month">{{month}}</div>
       <div *ngIf="tbc" class="tbc">TBC</div>
     </div>
-    <div class="event-container">
-      <div class="event-name">{{eventName}}</div>
-      <div class="location-container">
-        <div class="location-icon"></div>
-        <div class="location-name">{{where}}</div>
+    <div class="event-main-container">
+      <div class="event-container">
+        <div class="event-name">{{eventName}}</div>
+        <div class="location-container">
+          <div class="location-icon"></div>
+          <div class="location-name">{{where}}</div>
+        </div>
+      </div>
+      <div class="down-arrow-container">
+        <div class="down-arrow" [ngClass]="{'rotate': expand}"></div>
       </div>
     </div>
   </div>
