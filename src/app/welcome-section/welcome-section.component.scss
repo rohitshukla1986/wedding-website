@@ -1,17 +1,13 @@
 @import '../common-styles';
 
 .main-container {
-  height: 100vh;
+  height: fit-content;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
   align-content: center;
-
-  @media screen and (max-device-width: 480px) {
-    padding: 25px;
-  }
+  padding: 50px 30px 30px;
 }
 
 .welcome-message-container {
@@ -33,8 +29,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
 
   @media screen and (max-device-width: 480px) {
     font-size: 1rem;
@@ -54,10 +48,18 @@
 .mob-raji-avatar,
 .mob-ro-avatar {
   width: 50%;
-  height: 100%;
+  height: 250px;
   display: flex;
   background-size: contain !important;
   background: no-repeat;
+
+  @media screen and (max-device-width: 480px) {
+    height: 120px;
+  }
+
+  @media screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+    height: 200px;
+  }
 }
 
 .mob-ro-avatar {
