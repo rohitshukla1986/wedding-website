@@ -198,6 +198,7 @@
   margin-bottom: 10px;
   z-index: 500;
   transition: all 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   @media screen and (max-device-width: 480px) {
     height: 10vh;
