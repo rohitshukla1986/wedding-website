@@ -40,6 +40,11 @@
 .main {
   height: fit-content;
   z-index: 5000;
+  padding-top: 30px;
+
+  @media screen and (max-device-width: 480px) {
+    padding-top: 0;
+  }
 }
 
 .sub-header {

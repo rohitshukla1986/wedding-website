@@ -44,7 +44,7 @@
   flex-direction: column;
   align-items: center;
   height: 140vh;
-  background-color: $pink;
+  background-color: white;
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 4px dashed black;
@@ -53,9 +53,36 @@
 }
 
 .image-container {
-  height: 75%;
+  height: 50%;
 
   @media screen and (max-device-width: 480px) {
-    height: 100%;
+    height: 65%;
+  }
+}
+
+.ngx-gallery-clickable {
+  border: 2px solid black !important;
+}
+
+.gallery-message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 25%;
+
+  @media screen and (max-device-width: 480px) {
+    padding-top: 0;
+    height: 35%;
+  }
+}
+
+.gallery-message {
+  font-size: 2rem;
+  text-align: center;
+
+  @media screen and (max-device-width: 1024px) {
+    font-size: 1rem;
   }
 }

@@ -105,3 +105,54 @@
   margin-bottom: 10px;
 }
 
+.faq-message-container {
+  display: flex;
+  height: 65vh;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.avatar-container {
+  display: flex;
+  width: 100%;
+  height: 40%;;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.message-container {
+  height: 60%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.ro-avatar,
+.raji-avatar {
+  width: 50%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ro-avatar {
+  background-position-x: right;
+  background-image: url('../../assets/img/ro_avatar5.png');
+}
+
+.raji-avatar {
+  background-image: url('../../assets/img/raji_avatar6.png');
+}
+
+.message {
+  font-size: 2rem;
+
+  @media screen and (max-device-width: 480px) {
+    font-size: 1rem;
+  }
+}

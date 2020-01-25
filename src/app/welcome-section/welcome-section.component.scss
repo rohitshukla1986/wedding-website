@@ -16,63 +16,39 @@
 
 .welcome-message-container {
   display: flex;
-  flex-direction: row;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
   align-content: center;
-
-  @media screen and (max-device-width: 480px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 
 .message-container {
-  width: 60%;
   font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
 
   @media screen and (max-device-width: 480px) {
-    text-align: center;
-    width: 80%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: 1rem;
-  }
-
-  @media screen and (min-device-width: 480px) and (min-device-width: 1024px) {
-    font-size: 2rem;
   }
 }
 
 .mob-avatar-container {
-  display: none;
-
-  @media screen and (max-device-width: 480px) {
     width: 100%;
-    height: 30%;
+    height: 20%;
     align-items: center;
     justify-content: center;
     align-content: center;
     flex-direction: row;
     display: flex;
-  }
-}
-
-.raji-avatar,
-.ro-avatar {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  background-size: contain;
-  background: no-repeat center;
-
-  @media screen and (max-device-width: 480px) {
-    display: none;
-  }
 }
 
 .mob-raji-avatar,
@@ -82,18 +58,13 @@
   display: flex;
   background-size: contain !important;
   background: no-repeat;
-
-  @media screen and (min-device-width: 480px) {
-    display: none;
-  }
 }
 
-.mob-ro-avatar,
-.ro-avatar {
+.mob-ro-avatar {
+  background-position-x: right;
   background-image: url('../../assets/img/frontpagero.png');
 }
 
-.mob-raji-avatar,
-.raji-avatar {
+.mob-raji-avatar {
   background-image: url('../../assets/img/frontpageraji.png');
 }
