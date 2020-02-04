@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize, NgxGalleryLayout} from 'ngx-gallery';
+import {NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize, NgxGalleryLayout, NgxGalleryOrder} from 'ngx-gallery';
 
 @Component({
   selector: 'app-photo-gallery',
@@ -20,8 +20,9 @@ export class PhotoGalleryComponent implements OnInit {
               imageSize: NgxGalleryImageSize.Contain,
               layout: NgxGalleryLayout.ThumbnailsTop,
               thumbnailsColumns: 4,
-              thumbnailsRows: 5,
+              thumbnailsRows: 4,
               image: false,
+              imageBullets: true
             },
             {
               breakpoint: 800,
@@ -29,11 +30,12 @@ export class PhotoGalleryComponent implements OnInit {
               height: '600px',
               imagePercent: 80,
               thumbnailsPercent: 20,
-              thumbnailsMargin: 20,
-              thumbnailMargin: 20,
+              thumbnailsMargin: 10,
+              thumbnailMargin: 10,
               imageSize: NgxGalleryImageSize.Contain,
               layout: NgxGalleryLayout.ThumbnailsTop,
-              image: false
+              image: false,
+              imageBullets: true
             },
             {
               breakpoint: 480,
@@ -44,7 +46,10 @@ export class PhotoGalleryComponent implements OnInit {
               layout: NgxGalleryLayout.ThumbnailsTop,
               image: false,
               thumbnailsColumns: 4,
-              thumbnailsRows: 5
+              thumbnailsRows: 4,
+              previewBullets: true,
+              previewZoom: true,
+              thumbnailsOrder: NgxGalleryOrder.Page
             }
         ];
 
@@ -52,7 +57,7 @@ export class PhotoGalleryComponent implements OnInit {
             {
                 small: '../../assets/gallery/pic1.jpg',
                 medium:  '../../assets/gallery/pic1.jpg',
-                big:  '../../assets/gallery/pic1.jpg'
+                big:  '../../assets/gallery/pic1.jpg',
             },
             {
                 small: '../../assets/gallery/pic2.jpg',
@@ -120,11 +125,6 @@ export class PhotoGalleryComponent implements OnInit {
                 big:  '../../assets/gallery/pic15.jpg'
             },
             {
-                small: '../../assets/gallery/pic15.jpg',
-                medium:  '../../assets/gallery/pic15.jpg',
-                big:  '../../assets/gallery/pic15.jpg'
-            },
-            {
                 small: '../../assets/gallery/pic16.jpg',
                 medium:  '../../assets/gallery/pic16.jpg',
                 big:  '../../assets/gallery/pic16.jpg'
@@ -134,21 +134,6 @@ export class PhotoGalleryComponent implements OnInit {
                 medium:  '../../assets/gallery/pic17.jpg',
                 big:  '../../assets/gallery/pic17.jpg'
             },
-            {
-                small: '../../assets/gallery/pic19.jpg',
-                medium:  '../../assets/gallery/pic19.jpg',
-                big:  '../../assets/gallery/pic19.jpg'
-            },
-            {
-                small: '../../assets/gallery/pic19.jpg',
-                medium:  '../../assets/gallery/pic19.jpg',
-                big:  '../../assets/gallery/pic19.jpg'
-            },
-            {
-                small: '../../assets/gallery/pic20.jpg',
-                medium:  '../../assets/gallery/pic20.jpg',
-                big:  '../../assets/gallery/pic20.jpg'
-            }
         ];
     }
 }

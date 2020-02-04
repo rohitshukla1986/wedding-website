@@ -19,6 +19,7 @@ import {MglTimelineModule} from 'angular-mgl-timeline';
 import {ScrollSpyDirective} from './app-scroll-spy.directive';
 import {EventCardComponent} from './other-events/event-card/event-card.component';
 import {WelcomeSectionComponent} from './welcome-section/welcome-section.component';
+import { PartyProfileComponent } from './party-profile/party-profile.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {WelcomeSectionComponent} from './welcome-section/welcome-section.compone
     FaqComponent,
     ScrollSpyDirective,
     EventCardComponent,
-    WelcomeSectionComponent
+    WelcomeSectionComponent,
+    PartyProfileComponent
   ],
   imports: [
     BrowserModule,
